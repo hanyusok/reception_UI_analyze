@@ -1,0 +1,28 @@
+2025/12/12-11:51:51 	PID (17540) OSVer Info:: MajorVer=[6] MinorVer=[2] BuildNo=[9200] PlatformId=[NT] ServicePack[]
+2025/12/12-11:51:51 	PID (17540) Running on WOW64
+2025/12/12-11:51:51 	PID (17540) Info File                 =[C:\Users\DELL\Documents\reception_UI_analyze\webservice.ini]
+2025/12/12-11:51:51 	PID (17540) Proxy IP/Port         =[127.0.0.1:8888]
+2025/12/12-11:51:51 	PID (17540) Proxy Exe Path      =[C:\Program Files (x86)\SoftForum\ClientProxy\]
+2025/12/12-11:51:51 	PID (17540) ConnectionTimeOut =[30]초
+2025/12/12-11:51:51 	PID (17540) LogFileMakeYn       =[로그생성]
+2025/12/12-11:51:51 	PID (17540) ClientBaseYn          =[ClientProxy사용]
+2025/12/12-11:51:51 	PID (17540) SSLPort                =[]
+2025/12/12-11:51:51 	PID (17540) =================================================================
+
+2025/12/12-11:51:51 	PID (17540) Webservice.DLL[VER120130.1206] Initializing
+2025/12/12-11:51:51 	PID (17540) ClientProxy start path=[C:\Program Files (x86)\SoftForum\ClientProxy\ClientProxy.exe]
+2025/12/12-11:51:51 	PID (17540) (Error) ClientProxy.exe Not Found[C:\Program Files (x86)\SoftForum\ClientProxy\ClientProxy.exe]
+2025/12/12-14:05:21 	PID (19336) OSVer Info:: MajorVer=[6] MinorVer=[2] BuildNo=[9200] PlatformId=[NT] ServicePack[]
+2025/12/12-14:05:21 	PID (19336) Running on WOW64
+2025/12/12-14:05:21 	PID (19336) Info File                 =[C:\Users\DELL\Documents\reception_UI_analyze\webservice.ini]
+2025/12/12-14:05:21 	PID (19336) Proxy IP/Port         =[127.0.0.1:8888]
+2025/12/12-14:05:21 	PID (19336) Proxy Exe Path      =[C:\Program Files (x86)\SoftForum\ClientProxy\]
+2025/12/12-14:05:21 	PID (19336) ConnectionTimeOut =[30]초
+2025/12/12-14:05:21 	PID (19336) LogFileMakeYn       =[로그생성]
+2025/12/12-14:05:21 	PID (19336) ClientBaseYn          =[ClientProxy사용]
+2025/12/12-14:05:21 	PID (19336) SSLPort                =[]
+2025/12/12-14:05:21 	PID (19336) =================================================================
+
+2025/12/12-14:05:21 	PID (19336) Webservice.DLL[VER120130.1206] Initializing
+2025/12/12-14:05:21 	PID (19336) ClientProxy start path=[C:\Program Files (x86)\SoftForum\ClientProxy\ClientProxy.exe]
+2025/12/12-14:05:21 	PID (19336) (Error) ClientProxy.exe Not Found[C:\Program Files (x86)\SoftForum\ClientProxy\ClientProxy.exe]

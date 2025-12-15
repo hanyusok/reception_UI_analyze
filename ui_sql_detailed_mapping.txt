@@ -1,0 +1,3063 @@
+================================================================================
+UI 요소와 SQL 쿼리 상세 매핑
+================================================================================
+
+
+================================================================================
+UI 요소: 신체계측
+================================================================================
+카테고리: header
+타입: button
+액션: body_measurement
+
+관련 SQL 쿼리 (21개):
+--------------------------------------------------------------------------------
+
+[쿼리 #1]
+타입: UPDATE
+테이블: PERSON
+필드: 
+쿼리:
+UPDATE PERSON SET BLOODTYPE = :BloodType WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #2]
+타입: UPDATE
+테이블: MASTERAUX
+필드: 
+쿼리:
+UPDATE MASTERAUX SET Ұ ￿￿ 수진자 진료확인번호 내려받기 실패... 다시 시도해주세요. Ұ ￿￿@ UPDATE MASTERAUX SET ACCEPT = :Accept, ACCEPTNUM2 = :AcceptNum2, Ұ ￿￿( ERRCODE = :ErrCode, SELFEE2 = :SelFee2, Ұ ￿￿...
+--------------------------------------------------------------------------------
+
+[쿼리 #3]
+타입: UPDATE
+테이블: PERSON
+필드: 
+쿼리:
+UPDATE PERSON SET PICTURE = :Picture WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #4]
+타입: UPDATE
+테이블: FEELOG
+필드: MISU
+쿼리:
+UPDATE FEELOG SET MISU = :Misu, WHANBUL = :Whanbul, WHANSU = :Whansu Ұ ￿￿+ WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #5]
+타입: UPDATE
+테이블: PERSON
+필드: PSNIDT
+쿼리:
+UPDATE PERSON SET PSNIDT = :PsnIdT WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #6]
+타입: UPDATE
+테이블: PERSON
+필드: PSNIDT, PSNID
+쿼리:
+UPDATE PERSON SET PSNIDT = :PsnIdT, PSNID = :PsnId WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #7]
+타입: UPDATE
+테이블: CARD
+필드: 
+쿼리:
+UPDATE CARD SET ENDDATE = :EDate1 WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #8]
+타입: UPDATE
+테이블: CHECKPERSON
+필드: 
+쿼리:
+UPDATE CHECKPERSON SET WEIGHT = :WEIGHT, HEIGHT = :HEIGHT, TEMPERATUR = :TEMPERATUR, PULSE = :PULSE, SYSTOLIC = :SYSTOLIC, DIASTOLIC = :DIASTOLIC WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #9]
+타입: UPDATE
+테이블: CARD
+필드: 
+쿼리:
+UPDATE CARD SET FNAME = :Fname WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #10]
+타입: UPDATE
+테이블: PERSON
+필드: 
+쿼리:
+UPDATE PERSON SET PNAME = :Pname, PBIRTH = :Pbirth, PIDNUM = :Pidnum, Ұ ￿￿N PIDNUM2 = :Pidnum2, SEX = :Sex, RELATION = :Relation, RELATION2 = :Relation2, Ұ ￿￿J CRIPPLED = :Crippled, BOHUN = :Bohun, AGREE = :Agree, PERINFO = :PerInfo, Ұ ￿￿F DIABETES = :Diabetes, SAMEDATE1 = :SameDate1, SAMEDATE2 = :S...
+--------------------------------------------------------------------------------
+
+[쿼리 #11]
+타입: UPDATE
+테이블: CARD
+필드: 
+쿼리:
+UPDATE CARD SET ENDDATE = :EndDate, BEGINDATE = :BeginDate, Ұ ￿￿: FNAME = :Fname, FIDNUM = :Fidnum, UNIONCODE = :UnionCode, Ұ ￿￿> CARDNUM = :CardNum, COMPANY = :Company, CARETYPE = :CareType, Ұ ￿￿P CHA = :Cha, OTHERAREA = :OtherArea WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #12]
+타입: UPDATE
+테이블: MASTERAUX
+필드: 
+쿼리:
+UPDATE MASTERAUX SET ACCEPT = NULL, ACCEPTNUM = NULL, Ұ ￿￿# ACCEPTNUM2 = NULL, SELFEE2 = NULL, Ұ ￿￿' REQCAREFEE2 = NULL, REMCAREFEE = NULL, Ұ ￿￿( REQPREGFEE2 := NULL, REMPREGFEE = NULL, Ұ ￿￿< PRESNUM2 := NULL, DX2 = NULL, DX2SP = NULL, REQFEE2 = NULL, Ұ ￿￿K GENFEE2 := NULL, ERRCODE = NULL WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #13]
+타입: UPDATE
+테이블: PERSON
+필드: 
+쿼리:
+UPDATE PERSON SET LASTCHECK = :LastCheck WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #14]
+타입: UPDATE
+테이블: MASTERAUX
+필드: PIDNUM
+쿼리:
+UPDATE MASTERAUX SET PIDNUM = :Pidnum, Pname = :Pname, CHK = :Chk, Ұ ￿￿6 SPCODE = :Spcode, BUDAM = :Budam, CAREFEE = :CareFee, Ұ ￿￿> PREGFEE = :PregFee WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #15]
+타입: UPDATE
+테이블: VIEWCHECK
+필드: 
+쿼리:
+UPDATE VIEWCHECK SET VIEWCHECK = :ViewCheck, VIEWTEXT = :Vw WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #16]
+타입: UPDATE
+테이블: MASTERAUX
+필드: 
+쿼리:
+UPDATE MASTERAUX SET CHK := :Chk, SPCODE = :Spcode, Ұ ￿￿D ACCEPT = :Accept, ACCEPTNUM = :AcceptNum, ACCEPTNUM2 = :AcceptNum2, Ұ ￿￿ SELFEE2 = :SelFee2, Ұ ￿￿6 REQCAREFEE2 = :ReqCareFee2, REMCAREFEE = :RemCareFee, Ұ ￿￿6 REQPREGFEE2 = :ReqPregFee2, REMPREGFEE = :RemPregFee, Ұ ￿￿F PRESNUM2 = :PresNum2, D...
+--------------------------------------------------------------------------------
+
+[쿼리 #17]
+타입: UPDATE
+테이블: MASTERAUX
+필드: 
+쿼리:
+UPDATE MASTERAUX SET CHK = :Chk, SPCODE = :Spcode, Ұ ￿￿> ACCEPT = :Accept, ACCEPTNUM = :AcceptNum, SELFEE2 = :SelFee2, Ұ ￿￿6 REQCAREFEE2 = :ReqCareFee2, REMCAREFEE = :RemCareFee, Ұ ￿￿6 REQPREGFEE2 = :ReqPregFee2, REMPREGFEE = :RemPregFee, Ұ ￿￿F PRESNUM2 = :PresNum2, DX2 = :Dx2, DX2SP = :Dx2Sp, REQFE...
+--------------------------------------------------------------------------------
+
+[쿼리 #18]
+타입: UPDATE
+테이블: FAMILY
+필드: 
+쿼리:
+UPDATE FAMILY SET Ұ ￿￿ ZIPCODE2 = :ZipCode2, N2 = :N2, Ұ ￿￿, HOUSENUM = :HouseNum, ZIPCODE3 = :ZipCode3, Ұ ￿￿@ ZONE3 = :Zone3, HOUSENUM3 = :HouseNum3, LOCALCODE = :LocalCode, Ұ ￿￿8 PHONENUM = :PhoneNum, HPCODE = :HPcode, HPNUM = :HPnum, Ұ ￿￿1 EMAIL = :Email, MEMO = :Memo, FIXZONE = :FixZone Ұ ￿￿ WHE...
+--------------------------------------------------------------------------------
+
+[쿼리 #19]
+타입: UPDATE
+테이블: CARD
+필드: 
+쿼리:
+UPDATE CARD SET ENDDATE = :EndDate WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #20]
+타입: UPDATE
+테이블: PERSON
+필드: 
+쿼리:
+UPDATE PERSON SET PICTURE = NULL WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #21]
+타입: UPDATE
+테이블: MASTERNUM
+필드: N
+쿼리:
+UPDATE MASTERNUM SET N = :N WHERE...
+--------------------------------------------------------------------------------
+
+================================================================================
+UI 요소: 수납
+================================================================================
+카테고리: header
+타입: button
+액션: payment
+
+관련 SQL 쿼리 (21개):
+--------------------------------------------------------------------------------
+
+[쿼리 #1]
+타입: UPDATE
+테이블: PERSON
+필드: 
+쿼리:
+UPDATE PERSON SET BLOODTYPE = :BloodType WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #2]
+타입: UPDATE
+테이블: MASTERAUX
+필드: 
+쿼리:
+UPDATE MASTERAUX SET Ұ ￿￿ 수진자 진료확인번호 내려받기 실패... 다시 시도해주세요. Ұ ￿￿@ UPDATE MASTERAUX SET ACCEPT = :Accept, ACCEPTNUM2 = :AcceptNum2, Ұ ￿￿( ERRCODE = :ErrCode, SELFEE2 = :SelFee2, Ұ ￿￿...
+--------------------------------------------------------------------------------
+
+[쿼리 #3]
+타입: UPDATE
+테이블: PERSON
+필드: 
+쿼리:
+UPDATE PERSON SET PICTURE = :Picture WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #4]
+타입: UPDATE
+테이블: FEELOG
+필드: MISU
+쿼리:
+UPDATE FEELOG SET MISU = :Misu, WHANBUL = :Whanbul, WHANSU = :Whansu Ұ ￿￿+ WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #5]
+타입: UPDATE
+테이블: PERSON
+필드: PSNIDT
+쿼리:
+UPDATE PERSON SET PSNIDT = :PsnIdT WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #6]
+타입: UPDATE
+테이블: PERSON
+필드: PSNIDT, PSNID
+쿼리:
+UPDATE PERSON SET PSNIDT = :PsnIdT, PSNID = :PsnId WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #7]
+타입: UPDATE
+테이블: CARD
+필드: 
+쿼리:
+UPDATE CARD SET ENDDATE = :EDate1 WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #8]
+타입: UPDATE
+테이블: CHECKPERSON
+필드: 
+쿼리:
+UPDATE CHECKPERSON SET WEIGHT = :WEIGHT, HEIGHT = :HEIGHT, TEMPERATUR = :TEMPERATUR, PULSE = :PULSE, SYSTOLIC = :SYSTOLIC, DIASTOLIC = :DIASTOLIC WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #9]
+타입: UPDATE
+테이블: CARD
+필드: 
+쿼리:
+UPDATE CARD SET FNAME = :Fname WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #10]
+타입: UPDATE
+테이블: PERSON
+필드: 
+쿼리:
+UPDATE PERSON SET PNAME = :Pname, PBIRTH = :Pbirth, PIDNUM = :Pidnum, Ұ ￿￿N PIDNUM2 = :Pidnum2, SEX = :Sex, RELATION = :Relation, RELATION2 = :Relation2, Ұ ￿￿J CRIPPLED = :Crippled, BOHUN = :Bohun, AGREE = :Agree, PERINFO = :PerInfo, Ұ ￿￿F DIABETES = :Diabetes, SAMEDATE1 = :SameDate1, SAMEDATE2 = :S...
+--------------------------------------------------------------------------------
+
+[쿼리 #11]
+타입: UPDATE
+테이블: CARD
+필드: 
+쿼리:
+UPDATE CARD SET ENDDATE = :EndDate, BEGINDATE = :BeginDate, Ұ ￿￿: FNAME = :Fname, FIDNUM = :Fidnum, UNIONCODE = :UnionCode, Ұ ￿￿> CARDNUM = :CardNum, COMPANY = :Company, CARETYPE = :CareType, Ұ ￿￿P CHA = :Cha, OTHERAREA = :OtherArea WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #12]
+타입: UPDATE
+테이블: MASTERAUX
+필드: 
+쿼리:
+UPDATE MASTERAUX SET ACCEPT = NULL, ACCEPTNUM = NULL, Ұ ￿￿# ACCEPTNUM2 = NULL, SELFEE2 = NULL, Ұ ￿￿' REQCAREFEE2 = NULL, REMCAREFEE = NULL, Ұ ￿￿( REQPREGFEE2 := NULL, REMPREGFEE = NULL, Ұ ￿￿< PRESNUM2 := NULL, DX2 = NULL, DX2SP = NULL, REQFEE2 = NULL, Ұ ￿￿K GENFEE2 := NULL, ERRCODE = NULL WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #13]
+타입: UPDATE
+테이블: PERSON
+필드: 
+쿼리:
+UPDATE PERSON SET LASTCHECK = :LastCheck WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #14]
+타입: UPDATE
+테이블: MASTERAUX
+필드: PIDNUM
+쿼리:
+UPDATE MASTERAUX SET PIDNUM = :Pidnum, Pname = :Pname, CHK = :Chk, Ұ ￿￿6 SPCODE = :Spcode, BUDAM = :Budam, CAREFEE = :CareFee, Ұ ￿￿> PREGFEE = :PregFee WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #15]
+타입: UPDATE
+테이블: VIEWCHECK
+필드: 
+쿼리:
+UPDATE VIEWCHECK SET VIEWCHECK = :ViewCheck, VIEWTEXT = :Vw WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #16]
+타입: UPDATE
+테이블: MASTERAUX
+필드: 
+쿼리:
+UPDATE MASTERAUX SET CHK := :Chk, SPCODE = :Spcode, Ұ ￿￿D ACCEPT = :Accept, ACCEPTNUM = :AcceptNum, ACCEPTNUM2 = :AcceptNum2, Ұ ￿￿ SELFEE2 = :SelFee2, Ұ ￿￿6 REQCAREFEE2 = :ReqCareFee2, REMCAREFEE = :RemCareFee, Ұ ￿￿6 REQPREGFEE2 = :ReqPregFee2, REMPREGFEE = :RemPregFee, Ұ ￿￿F PRESNUM2 = :PresNum2, D...
+--------------------------------------------------------------------------------
+
+[쿼리 #17]
+타입: UPDATE
+테이블: MASTERAUX
+필드: 
+쿼리:
+UPDATE MASTERAUX SET CHK = :Chk, SPCODE = :Spcode, Ұ ￿￿> ACCEPT = :Accept, ACCEPTNUM = :AcceptNum, SELFEE2 = :SelFee2, Ұ ￿￿6 REQCAREFEE2 = :ReqCareFee2, REMCAREFEE = :RemCareFee, Ұ ￿￿6 REQPREGFEE2 = :ReqPregFee2, REMPREGFEE = :RemPregFee, Ұ ￿￿F PRESNUM2 = :PresNum2, DX2 = :Dx2, DX2SP = :Dx2Sp, REQFE...
+--------------------------------------------------------------------------------
+
+[쿼리 #18]
+타입: UPDATE
+테이블: FAMILY
+필드: 
+쿼리:
+UPDATE FAMILY SET Ұ ￿￿ ZIPCODE2 = :ZipCode2, N2 = :N2, Ұ ￿￿, HOUSENUM = :HouseNum, ZIPCODE3 = :ZipCode3, Ұ ￿￿@ ZONE3 = :Zone3, HOUSENUM3 = :HouseNum3, LOCALCODE = :LocalCode, Ұ ￿￿8 PHONENUM = :PhoneNum, HPCODE = :HPcode, HPNUM = :HPnum, Ұ ￿￿1 EMAIL = :Email, MEMO = :Memo, FIXZONE = :FixZone Ұ ￿￿ WHE...
+--------------------------------------------------------------------------------
+
+[쿼리 #19]
+타입: UPDATE
+테이블: CARD
+필드: 
+쿼리:
+UPDATE CARD SET ENDDATE = :EndDate WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #20]
+타입: UPDATE
+테이블: PERSON
+필드: 
+쿼리:
+UPDATE PERSON SET PICTURE = NULL WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #21]
+타입: UPDATE
+테이블: MASTERNUM
+필드: N
+쿼리:
+UPDATE MASTERNUM SET N = :N WHERE...
+--------------------------------------------------------------------------------
+
+================================================================================
+UI 요소: 접수
+================================================================================
+카테고리: reception_buttons
+타입: button
+액션: register_patient
+
+관련 SQL 쿼리 (22개):
+--------------------------------------------------------------------------------
+
+[쿼리 #1]
+타입: INSERT
+테이블: LAST, FAMILY
+필드: FCODE
+쿼리:
+UPDATE LAST SET FCODE = :Fcode Ұ ￿￿* INSERT INTO FAMILY (FCODE) VALUES (:Fcode) Ұ ￿￿5 UPDATE PERSON SET FCODE = :Fcode WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #2]
+타입: UPDATE
+테이블: PERSON
+필드: 
+쿼리:
+UPDATE PERSON SET BLOODTYPE = :BloodType WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #3]
+타입: UPDATE
+테이블: MASTERAUX
+필드: 
+쿼리:
+UPDATE MASTERAUX SET Ұ ￿￿ 수진자 진료확인번호 내려받기 실패... 다시 시도해주세요. Ұ ￿￿@ UPDATE MASTERAUX SET ACCEPT = :Accept, ACCEPTNUM2 = :AcceptNum2, Ұ ￿￿( ERRCODE = :ErrCode, SELFEE2 = :SelFee2, Ұ ￿￿...
+--------------------------------------------------------------------------------
+
+[쿼리 #4]
+타입: UPDATE
+테이블: PERSON
+필드: 
+쿼리:
+UPDATE PERSON SET PICTURE = :Picture WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #5]
+타입: UPDATE
+테이블: FEELOG
+필드: MISU
+쿼리:
+UPDATE FEELOG SET MISU = :Misu, WHANBUL = :Whanbul, WHANSU = :Whansu Ұ ￿￿+ WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #6]
+타입: UPDATE
+테이블: PERSON
+필드: PSNIDT
+쿼리:
+UPDATE PERSON SET PSNIDT = :PsnIdT WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #7]
+타입: UPDATE
+테이블: PERSON
+필드: PSNIDT, PSNID
+쿼리:
+UPDATE PERSON SET PSNIDT = :PsnIdT, PSNID = :PsnId WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #8]
+타입: UPDATE
+테이블: CARD
+필드: 
+쿼리:
+UPDATE CARD SET ENDDATE = :EDate1 WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #9]
+타입: UPDATE
+테이블: CHECKPERSON
+필드: 
+쿼리:
+UPDATE CHECKPERSON SET WEIGHT = :WEIGHT, HEIGHT = :HEIGHT, TEMPERATUR = :TEMPERATUR, PULSE = :PULSE, SYSTOLIC = :SYSTOLIC, DIASTOLIC = :DIASTOLIC WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #10]
+타입: UPDATE
+테이블: CARD
+필드: 
+쿼리:
+UPDATE CARD SET FNAME = :Fname WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #11]
+타입: UPDATE
+테이블: PERSON
+필드: 
+쿼리:
+UPDATE PERSON SET PNAME = :Pname, PBIRTH = :Pbirth, PIDNUM = :Pidnum, Ұ ￿￿N PIDNUM2 = :Pidnum2, SEX = :Sex, RELATION = :Relation, RELATION2 = :Relation2, Ұ ￿￿J CRIPPLED = :Crippled, BOHUN = :Bohun, AGREE = :Agree, PERINFO = :PerInfo, Ұ ￿￿F DIABETES = :Diabetes, SAMEDATE1 = :SameDate1, SAMEDATE2 = :S...
+--------------------------------------------------------------------------------
+
+[쿼리 #12]
+타입: UPDATE
+테이블: CARD
+필드: 
+쿼리:
+UPDATE CARD SET ENDDATE = :EndDate, BEGINDATE = :BeginDate, Ұ ￿￿: FNAME = :Fname, FIDNUM = :Fidnum, UNIONCODE = :UnionCode, Ұ ￿￿> CARDNUM = :CardNum, COMPANY = :Company, CARETYPE = :CareType, Ұ ￿￿P CHA = :Cha, OTHERAREA = :OtherArea WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #13]
+타입: UPDATE
+테이블: MASTERAUX
+필드: 
+쿼리:
+UPDATE MASTERAUX SET ACCEPT = NULL, ACCEPTNUM = NULL, Ұ ￿￿# ACCEPTNUM2 = NULL, SELFEE2 = NULL, Ұ ￿￿' REQCAREFEE2 = NULL, REMCAREFEE = NULL, Ұ ￿￿( REQPREGFEE2 := NULL, REMPREGFEE = NULL, Ұ ￿￿< PRESNUM2 := NULL, DX2 = NULL, DX2SP = NULL, REQFEE2 = NULL, Ұ ￿￿K GENFEE2 := NULL, ERRCODE = NULL WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #14]
+타입: UPDATE
+테이블: PERSON
+필드: 
+쿼리:
+UPDATE PERSON SET LASTCHECK = :LastCheck WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #15]
+타입: UPDATE
+테이블: MASTERAUX
+필드: PIDNUM
+쿼리:
+UPDATE MASTERAUX SET PIDNUM = :Pidnum, Pname = :Pname, CHK = :Chk, Ұ ￿￿6 SPCODE = :Spcode, BUDAM = :Budam, CAREFEE = :CareFee, Ұ ￿￿> PREGFEE = :PregFee WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #16]
+타입: UPDATE
+테이블: VIEWCHECK
+필드: 
+쿼리:
+UPDATE VIEWCHECK SET VIEWCHECK = :ViewCheck, VIEWTEXT = :Vw WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #17]
+타입: UPDATE
+테이블: MASTERAUX
+필드: 
+쿼리:
+UPDATE MASTERAUX SET CHK := :Chk, SPCODE = :Spcode, Ұ ￿￿D ACCEPT = :Accept, ACCEPTNUM = :AcceptNum, ACCEPTNUM2 = :AcceptNum2, Ұ ￿￿ SELFEE2 = :SelFee2, Ұ ￿￿6 REQCAREFEE2 = :ReqCareFee2, REMCAREFEE = :RemCareFee, Ұ ￿￿6 REQPREGFEE2 = :ReqPregFee2, REMPREGFEE = :RemPregFee, Ұ ￿￿F PRESNUM2 = :PresNum2, D...
+--------------------------------------------------------------------------------
+
+[쿼리 #18]
+타입: UPDATE
+테이블: MASTERAUX
+필드: 
+쿼리:
+UPDATE MASTERAUX SET CHK = :Chk, SPCODE = :Spcode, Ұ ￿￿> ACCEPT = :Accept, ACCEPTNUM = :AcceptNum, SELFEE2 = :SelFee2, Ұ ￿￿6 REQCAREFEE2 = :ReqCareFee2, REMCAREFEE = :RemCareFee, Ұ ￿￿6 REQPREGFEE2 = :ReqPregFee2, REMPREGFEE = :RemPregFee, Ұ ￿￿F PRESNUM2 = :PresNum2, DX2 = :Dx2, DX2SP = :Dx2Sp, REQFE...
+--------------------------------------------------------------------------------
+
+[쿼리 #19]
+타입: UPDATE
+테이블: FAMILY
+필드: 
+쿼리:
+UPDATE FAMILY SET Ұ ￿￿ ZIPCODE2 = :ZipCode2, N2 = :N2, Ұ ￿￿, HOUSENUM = :HouseNum, ZIPCODE3 = :ZipCode3, Ұ ￿￿@ ZONE3 = :Zone3, HOUSENUM3 = :HouseNum3, LOCALCODE = :LocalCode, Ұ ￿￿8 PHONENUM = :PhoneNum, HPCODE = :HPcode, HPNUM = :HPnum, Ұ ￿￿1 EMAIL = :Email, MEMO = :Memo, FIXZONE = :FixZone Ұ ￿￿ WHE...
+--------------------------------------------------------------------------------
+
+[쿼리 #20]
+타입: UPDATE
+테이블: CARD
+필드: 
+쿼리:
+UPDATE CARD SET ENDDATE = :EndDate WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #21]
+타입: UPDATE
+테이블: PERSON
+필드: 
+쿼리:
+UPDATE PERSON SET PICTURE = NULL WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #22]
+타입: UPDATE
+테이블: MASTERNUM
+필드: N
+쿼리:
+UPDATE MASTERNUM SET N = :N WHERE...
+--------------------------------------------------------------------------------
+
+================================================================================
+UI 요소: 접종
+================================================================================
+카테고리: reception_buttons
+타입: button
+액션: vaccination
+
+관련 SQL 쿼리 (7개):
+--------------------------------------------------------------------------------
+
+[쿼리 #1]
+타입: DELETE
+테이블: dataset
+필드: 
+쿼리:
+delete from dataset. (No delete query)&Cannot refresh row. (No refresh query) Buffer not set!Circular references not permitted SQL Parse Error:...
+--------------------------------------------------------------------------------
+
+[쿼리 #2]
+타입: DELETE
+테이블: PERSON
+필드: 
+쿼리:
+DELETE FROM PERSON WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #3]
+타입: DELETE
+테이블: CARD
+필드: 
+쿼리:
+DELETE FROM CARD WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #4]
+타입: DELETE
+테이블: VAX2
+필드: 
+쿼리:
+DELETE FROM VAX2 WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #5]
+타입: DELETE
+테이블: DISEREG
+필드: 
+쿼리:
+DELETE FROM DISEREG WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #6]
+타입: DELETE
+테이블: CHECKPERSON
+필드: 
+쿼리:
+DELETE FROM CHECKPERSON WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #7]
+타입: DELETE
+테이블: DUO
+필드: 
+쿼리:
+DELETE FROM DUO 䴆䥁䑎XҰ ￿￿) WHERE...
+--------------------------------------------------------------------------------
+
+================================================================================
+UI 요소: 새가족
+================================================================================
+카테고리: reception_buttons
+타입: button
+액션: new_family
+
+관련 SQL 쿼리 (1개):
+--------------------------------------------------------------------------------
+
+[쿼리 #1]
+타입: INSERT
+테이블: LAST, FAMILY
+필드: FCODE
+쿼리:
+UPDATE LAST SET FCODE = :Fcode Ұ ￿￿* INSERT INTO FAMILY (FCODE) VALUES (:Fcode) Ұ ￿￿5 UPDATE PERSON SET FCODE = :Fcode WHERE...
+--------------------------------------------------------------------------------
+
+================================================================================
+UI 요소: 수정
+================================================================================
+카테고리: reception_buttons
+타입: button
+액션: modify_patient
+
+관련 SQL 쿼리 (21개):
+--------------------------------------------------------------------------------
+
+[쿼리 #1]
+타입: UPDATE
+테이블: PERSON
+필드: 
+쿼리:
+UPDATE PERSON SET BLOODTYPE = :BloodType WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #2]
+타입: UPDATE
+테이블: MASTERAUX
+필드: 
+쿼리:
+UPDATE MASTERAUX SET Ұ ￿￿ 수진자 진료확인번호 내려받기 실패... 다시 시도해주세요. Ұ ￿￿@ UPDATE MASTERAUX SET ACCEPT = :Accept, ACCEPTNUM2 = :AcceptNum2, Ұ ￿￿( ERRCODE = :ErrCode, SELFEE2 = :SelFee2, Ұ ￿￿...
+--------------------------------------------------------------------------------
+
+[쿼리 #3]
+타입: UPDATE
+테이블: PERSON
+필드: 
+쿼리:
+UPDATE PERSON SET PICTURE = :Picture WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #4]
+타입: UPDATE
+테이블: FEELOG
+필드: MISU
+쿼리:
+UPDATE FEELOG SET MISU = :Misu, WHANBUL = :Whanbul, WHANSU = :Whansu Ұ ￿￿+ WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #5]
+타입: UPDATE
+테이블: PERSON
+필드: PSNIDT
+쿼리:
+UPDATE PERSON SET PSNIDT = :PsnIdT WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #6]
+타입: UPDATE
+테이블: PERSON
+필드: PSNIDT, PSNID
+쿼리:
+UPDATE PERSON SET PSNIDT = :PsnIdT, PSNID = :PsnId WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #7]
+타입: UPDATE
+테이블: CARD
+필드: 
+쿼리:
+UPDATE CARD SET ENDDATE = :EDate1 WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #8]
+타입: UPDATE
+테이블: CHECKPERSON
+필드: 
+쿼리:
+UPDATE CHECKPERSON SET WEIGHT = :WEIGHT, HEIGHT = :HEIGHT, TEMPERATUR = :TEMPERATUR, PULSE = :PULSE, SYSTOLIC = :SYSTOLIC, DIASTOLIC = :DIASTOLIC WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #9]
+타입: UPDATE
+테이블: CARD
+필드: 
+쿼리:
+UPDATE CARD SET FNAME = :Fname WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #10]
+타입: UPDATE
+테이블: PERSON
+필드: 
+쿼리:
+UPDATE PERSON SET PNAME = :Pname, PBIRTH = :Pbirth, PIDNUM = :Pidnum, Ұ ￿￿N PIDNUM2 = :Pidnum2, SEX = :Sex, RELATION = :Relation, RELATION2 = :Relation2, Ұ ￿￿J CRIPPLED = :Crippled, BOHUN = :Bohun, AGREE = :Agree, PERINFO = :PerInfo, Ұ ￿￿F DIABETES = :Diabetes, SAMEDATE1 = :SameDate1, SAMEDATE2 = :S...
+--------------------------------------------------------------------------------
+
+[쿼리 #11]
+타입: UPDATE
+테이블: CARD
+필드: 
+쿼리:
+UPDATE CARD SET ENDDATE = :EndDate, BEGINDATE = :BeginDate, Ұ ￿￿: FNAME = :Fname, FIDNUM = :Fidnum, UNIONCODE = :UnionCode, Ұ ￿￿> CARDNUM = :CardNum, COMPANY = :Company, CARETYPE = :CareType, Ұ ￿￿P CHA = :Cha, OTHERAREA = :OtherArea WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #12]
+타입: UPDATE
+테이블: MASTERAUX
+필드: 
+쿼리:
+UPDATE MASTERAUX SET ACCEPT = NULL, ACCEPTNUM = NULL, Ұ ￿￿# ACCEPTNUM2 = NULL, SELFEE2 = NULL, Ұ ￿￿' REQCAREFEE2 = NULL, REMCAREFEE = NULL, Ұ ￿￿( REQPREGFEE2 := NULL, REMPREGFEE = NULL, Ұ ￿￿< PRESNUM2 := NULL, DX2 = NULL, DX2SP = NULL, REQFEE2 = NULL, Ұ ￿￿K GENFEE2 := NULL, ERRCODE = NULL WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #13]
+타입: UPDATE
+테이블: PERSON
+필드: 
+쿼리:
+UPDATE PERSON SET LASTCHECK = :LastCheck WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #14]
+타입: UPDATE
+테이블: MASTERAUX
+필드: PIDNUM
+쿼리:
+UPDATE MASTERAUX SET PIDNUM = :Pidnum, Pname = :Pname, CHK = :Chk, Ұ ￿￿6 SPCODE = :Spcode, BUDAM = :Budam, CAREFEE = :CareFee, Ұ ￿￿> PREGFEE = :PregFee WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #15]
+타입: UPDATE
+테이블: VIEWCHECK
+필드: 
+쿼리:
+UPDATE VIEWCHECK SET VIEWCHECK = :ViewCheck, VIEWTEXT = :Vw WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #16]
+타입: UPDATE
+테이블: MASTERAUX
+필드: 
+쿼리:
+UPDATE MASTERAUX SET CHK := :Chk, SPCODE = :Spcode, Ұ ￿￿D ACCEPT = :Accept, ACCEPTNUM = :AcceptNum, ACCEPTNUM2 = :AcceptNum2, Ұ ￿￿ SELFEE2 = :SelFee2, Ұ ￿￿6 REQCAREFEE2 = :ReqCareFee2, REMCAREFEE = :RemCareFee, Ұ ￿￿6 REQPREGFEE2 = :ReqPregFee2, REMPREGFEE = :RemPregFee, Ұ ￿￿F PRESNUM2 = :PresNum2, D...
+--------------------------------------------------------------------------------
+
+[쿼리 #17]
+타입: UPDATE
+테이블: MASTERAUX
+필드: 
+쿼리:
+UPDATE MASTERAUX SET CHK = :Chk, SPCODE = :Spcode, Ұ ￿￿> ACCEPT = :Accept, ACCEPTNUM = :AcceptNum, SELFEE2 = :SelFee2, Ұ ￿￿6 REQCAREFEE2 = :ReqCareFee2, REMCAREFEE = :RemCareFee, Ұ ￿￿6 REQPREGFEE2 = :ReqPregFee2, REMPREGFEE = :RemPregFee, Ұ ￿￿F PRESNUM2 = :PresNum2, DX2 = :Dx2, DX2SP = :Dx2Sp, REQFE...
+--------------------------------------------------------------------------------
+
+[쿼리 #18]
+타입: UPDATE
+테이블: FAMILY
+필드: 
+쿼리:
+UPDATE FAMILY SET Ұ ￿￿ ZIPCODE2 = :ZipCode2, N2 = :N2, Ұ ￿￿, HOUSENUM = :HouseNum, ZIPCODE3 = :ZipCode3, Ұ ￿￿@ ZONE3 = :Zone3, HOUSENUM3 = :HouseNum3, LOCALCODE = :LocalCode, Ұ ￿￿8 PHONENUM = :PhoneNum, HPCODE = :HPcode, HPNUM = :HPnum, Ұ ￿￿1 EMAIL = :Email, MEMO = :Memo, FIXZONE = :FixZone Ұ ￿￿ WHE...
+--------------------------------------------------------------------------------
+
+[쿼리 #19]
+타입: UPDATE
+테이블: CARD
+필드: 
+쿼리:
+UPDATE CARD SET ENDDATE = :EndDate WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #20]
+타입: UPDATE
+테이블: PERSON
+필드: 
+쿼리:
+UPDATE PERSON SET PICTURE = NULL WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #21]
+타입: UPDATE
+테이블: MASTERNUM
+필드: N
+쿼리:
+UPDATE MASTERNUM SET N = :N WHERE...
+--------------------------------------------------------------------------------
+
+================================================================================
+UI 요소: 기록
+================================================================================
+카테고리: reception_buttons
+타입: button
+액션: record_visit
+
+관련 SQL 쿼리 (22개):
+--------------------------------------------------------------------------------
+
+[쿼리 #1]
+타입: INSERT
+테이블: LAST, FAMILY
+필드: FCODE
+쿼리:
+UPDATE LAST SET FCODE = :Fcode Ұ ￿￿* INSERT INTO FAMILY (FCODE) VALUES (:Fcode) Ұ ￿￿5 UPDATE PERSON SET FCODE = :Fcode WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #2]
+타입: UPDATE
+테이블: PERSON
+필드: 
+쿼리:
+UPDATE PERSON SET BLOODTYPE = :BloodType WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #3]
+타입: UPDATE
+테이블: MASTERAUX
+필드: 
+쿼리:
+UPDATE MASTERAUX SET Ұ ￿￿ 수진자 진료확인번호 내려받기 실패... 다시 시도해주세요. Ұ ￿￿@ UPDATE MASTERAUX SET ACCEPT = :Accept, ACCEPTNUM2 = :AcceptNum2, Ұ ￿￿( ERRCODE = :ErrCode, SELFEE2 = :SelFee2, Ұ ￿￿...
+--------------------------------------------------------------------------------
+
+[쿼리 #4]
+타입: UPDATE
+테이블: PERSON
+필드: 
+쿼리:
+UPDATE PERSON SET PICTURE = :Picture WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #5]
+타입: UPDATE
+테이블: FEELOG
+필드: MISU
+쿼리:
+UPDATE FEELOG SET MISU = :Misu, WHANBUL = :Whanbul, WHANSU = :Whansu Ұ ￿￿+ WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #6]
+타입: UPDATE
+테이블: PERSON
+필드: PSNIDT
+쿼리:
+UPDATE PERSON SET PSNIDT = :PsnIdT WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #7]
+타입: UPDATE
+테이블: PERSON
+필드: PSNIDT, PSNID
+쿼리:
+UPDATE PERSON SET PSNIDT = :PsnIdT, PSNID = :PsnId WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #8]
+타입: UPDATE
+테이블: CARD
+필드: 
+쿼리:
+UPDATE CARD SET ENDDATE = :EDate1 WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #9]
+타입: UPDATE
+테이블: CHECKPERSON
+필드: 
+쿼리:
+UPDATE CHECKPERSON SET WEIGHT = :WEIGHT, HEIGHT = :HEIGHT, TEMPERATUR = :TEMPERATUR, PULSE = :PULSE, SYSTOLIC = :SYSTOLIC, DIASTOLIC = :DIASTOLIC WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #10]
+타입: UPDATE
+테이블: CARD
+필드: 
+쿼리:
+UPDATE CARD SET FNAME = :Fname WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #11]
+타입: UPDATE
+테이블: PERSON
+필드: 
+쿼리:
+UPDATE PERSON SET PNAME = :Pname, PBIRTH = :Pbirth, PIDNUM = :Pidnum, Ұ ￿￿N PIDNUM2 = :Pidnum2, SEX = :Sex, RELATION = :Relation, RELATION2 = :Relation2, Ұ ￿￿J CRIPPLED = :Crippled, BOHUN = :Bohun, AGREE = :Agree, PERINFO = :PerInfo, Ұ ￿￿F DIABETES = :Diabetes, SAMEDATE1 = :SameDate1, SAMEDATE2 = :S...
+--------------------------------------------------------------------------------
+
+[쿼리 #12]
+타입: UPDATE
+테이블: CARD
+필드: 
+쿼리:
+UPDATE CARD SET ENDDATE = :EndDate, BEGINDATE = :BeginDate, Ұ ￿￿: FNAME = :Fname, FIDNUM = :Fidnum, UNIONCODE = :UnionCode, Ұ ￿￿> CARDNUM = :CardNum, COMPANY = :Company, CARETYPE = :CareType, Ұ ￿￿P CHA = :Cha, OTHERAREA = :OtherArea WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #13]
+타입: UPDATE
+테이블: MASTERAUX
+필드: 
+쿼리:
+UPDATE MASTERAUX SET ACCEPT = NULL, ACCEPTNUM = NULL, Ұ ￿￿# ACCEPTNUM2 = NULL, SELFEE2 = NULL, Ұ ￿￿' REQCAREFEE2 = NULL, REMCAREFEE = NULL, Ұ ￿￿( REQPREGFEE2 := NULL, REMPREGFEE = NULL, Ұ ￿￿< PRESNUM2 := NULL, DX2 = NULL, DX2SP = NULL, REQFEE2 = NULL, Ұ ￿￿K GENFEE2 := NULL, ERRCODE = NULL WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #14]
+타입: UPDATE
+테이블: PERSON
+필드: 
+쿼리:
+UPDATE PERSON SET LASTCHECK = :LastCheck WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #15]
+타입: UPDATE
+테이블: MASTERAUX
+필드: PIDNUM
+쿼리:
+UPDATE MASTERAUX SET PIDNUM = :Pidnum, Pname = :Pname, CHK = :Chk, Ұ ￿￿6 SPCODE = :Spcode, BUDAM = :Budam, CAREFEE = :CareFee, Ұ ￿￿> PREGFEE = :PregFee WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #16]
+타입: UPDATE
+테이블: VIEWCHECK
+필드: 
+쿼리:
+UPDATE VIEWCHECK SET VIEWCHECK = :ViewCheck, VIEWTEXT = :Vw WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #17]
+타입: UPDATE
+테이블: MASTERAUX
+필드: 
+쿼리:
+UPDATE MASTERAUX SET CHK := :Chk, SPCODE = :Spcode, Ұ ￿￿D ACCEPT = :Accept, ACCEPTNUM = :AcceptNum, ACCEPTNUM2 = :AcceptNum2, Ұ ￿￿ SELFEE2 = :SelFee2, Ұ ￿￿6 REQCAREFEE2 = :ReqCareFee2, REMCAREFEE = :RemCareFee, Ұ ￿￿6 REQPREGFEE2 = :ReqPregFee2, REMPREGFEE = :RemPregFee, Ұ ￿￿F PRESNUM2 = :PresNum2, D...
+--------------------------------------------------------------------------------
+
+[쿼리 #18]
+타입: UPDATE
+테이블: MASTERAUX
+필드: 
+쿼리:
+UPDATE MASTERAUX SET CHK = :Chk, SPCODE = :Spcode, Ұ ￿￿> ACCEPT = :Accept, ACCEPTNUM = :AcceptNum, SELFEE2 = :SelFee2, Ұ ￿￿6 REQCAREFEE2 = :ReqCareFee2, REMCAREFEE = :RemCareFee, Ұ ￿￿6 REQPREGFEE2 = :ReqPregFee2, REMPREGFEE = :RemPregFee, Ұ ￿￿F PRESNUM2 = :PresNum2, DX2 = :Dx2, DX2SP = :Dx2Sp, REQFE...
+--------------------------------------------------------------------------------
+
+[쿼리 #19]
+타입: UPDATE
+테이블: FAMILY
+필드: 
+쿼리:
+UPDATE FAMILY SET Ұ ￿￿ ZIPCODE2 = :ZipCode2, N2 = :N2, Ұ ￿￿, HOUSENUM = :HouseNum, ZIPCODE3 = :ZipCode3, Ұ ￿￿@ ZONE3 = :Zone3, HOUSENUM3 = :HouseNum3, LOCALCODE = :LocalCode, Ұ ￿￿8 PHONENUM = :PhoneNum, HPCODE = :HPcode, HPNUM = :HPnum, Ұ ￿￿1 EMAIL = :Email, MEMO = :Memo, FIXZONE = :FixZone Ұ ￿￿ WHE...
+--------------------------------------------------------------------------------
+
+[쿼리 #20]
+타입: UPDATE
+테이블: CARD
+필드: 
+쿼리:
+UPDATE CARD SET ENDDATE = :EndDate WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #21]
+타입: UPDATE
+테이블: PERSON
+필드: 
+쿼리:
+UPDATE PERSON SET PICTURE = NULL WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #22]
+타입: UPDATE
+테이블: MASTERNUM
+필드: N
+쿼리:
+UPDATE MASTERNUM SET N = :N WHERE...
+--------------------------------------------------------------------------------
+
+================================================================================
+UI 요소: 수진자명
+================================================================================
+카테고리: personal_info_fields
+타입: input
+데이터베이스 필드: PNAME
+데이터베이스 테이블: PERSON
+
+관련 SQL 쿼리 (8개):
+--------------------------------------------------------------------------------
+
+[쿼리 #1]
+타입: UPDATE
+테이블: PERSON
+필드: 
+쿼리:
+UPDATE PERSON SET BLOODTYPE = :BloodType WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #2]
+타입: UPDATE
+테이블: PERSON
+필드: 
+쿼리:
+UPDATE PERSON SET PICTURE = :Picture WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #3]
+타입: UPDATE
+테이블: PERSON
+필드: PSNIDT
+쿼리:
+UPDATE PERSON SET PSNIDT = :PsnIdT WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #4]
+타입: UPDATE
+테이블: PERSON
+필드: PSNIDT, PSNID
+쿼리:
+UPDATE PERSON SET PSNIDT = :PsnIdT, PSNID = :PsnId WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #5]
+타입: UPDATE
+테이블: PERSON
+필드: 
+쿼리:
+UPDATE PERSON SET PNAME = :Pname, PBIRTH = :Pbirth, PIDNUM = :Pidnum, Ұ ￿￿N PIDNUM2 = :Pidnum2, SEX = :Sex, RELATION = :Relation, RELATION2 = :Relation2, Ұ ￿￿J CRIPPLED = :Crippled, BOHUN = :Bohun, AGREE = :Agree, PERINFO = :PerInfo, Ұ ￿￿F DIABETES = :Diabetes, SAMEDATE1 = :SameDate1, SAMEDATE2 = :S...
+--------------------------------------------------------------------------------
+
+[쿼리 #6]
+타입: UPDATE
+테이블: PERSON
+필드: 
+쿼리:
+UPDATE PERSON SET LASTCHECK = :LastCheck WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #7]
+타입: UPDATE
+테이블: PERSON
+필드: 
+쿼리:
+UPDATE PERSON SET PICTURE = NULL WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #8]
+타입: DELETE
+테이블: PERSON
+필드: 
+쿼리:
+DELETE FROM PERSON WHERE...
+--------------------------------------------------------------------------------
+
+================================================================================
+UI 요소: 관계
+================================================================================
+카테고리: personal_info_fields
+타입: input
+데이터베이스 필드: RELATION
+데이터베이스 테이블: PERSON
+
+관련 SQL 쿼리 (8개):
+--------------------------------------------------------------------------------
+
+[쿼리 #1]
+타입: UPDATE
+테이블: PERSON
+필드: 
+쿼리:
+UPDATE PERSON SET BLOODTYPE = :BloodType WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #2]
+타입: UPDATE
+테이블: PERSON
+필드: 
+쿼리:
+UPDATE PERSON SET PICTURE = :Picture WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #3]
+타입: UPDATE
+테이블: PERSON
+필드: PSNIDT
+쿼리:
+UPDATE PERSON SET PSNIDT = :PsnIdT WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #4]
+타입: UPDATE
+테이블: PERSON
+필드: PSNIDT, PSNID
+쿼리:
+UPDATE PERSON SET PSNIDT = :PsnIdT, PSNID = :PsnId WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #5]
+타입: UPDATE
+테이블: PERSON
+필드: 
+쿼리:
+UPDATE PERSON SET PNAME = :Pname, PBIRTH = :Pbirth, PIDNUM = :Pidnum, Ұ ￿￿N PIDNUM2 = :Pidnum2, SEX = :Sex, RELATION = :Relation, RELATION2 = :Relation2, Ұ ￿￿J CRIPPLED = :Crippled, BOHUN = :Bohun, AGREE = :Agree, PERINFO = :PerInfo, Ұ ￿￿F DIABETES = :Diabetes, SAMEDATE1 = :SameDate1, SAMEDATE2 = :S...
+--------------------------------------------------------------------------------
+
+[쿼리 #6]
+타입: UPDATE
+테이블: PERSON
+필드: 
+쿼리:
+UPDATE PERSON SET LASTCHECK = :LastCheck WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #7]
+타입: UPDATE
+테이블: PERSON
+필드: 
+쿼리:
+UPDATE PERSON SET PICTURE = NULL WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #8]
+타입: DELETE
+테이블: PERSON
+필드: 
+쿼리:
+DELETE FROM PERSON WHERE...
+--------------------------------------------------------------------------------
+
+================================================================================
+UI 요소: 개인번호
+================================================================================
+카테고리: personal_info_fields
+타입: input
+데이터베이스 필드: PCODE
+데이터베이스 테이블: PERSON
+
+관련 SQL 쿼리 (8개):
+--------------------------------------------------------------------------------
+
+[쿼리 #1]
+타입: UPDATE
+테이블: PERSON
+필드: 
+쿼리:
+UPDATE PERSON SET BLOODTYPE = :BloodType WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #2]
+타입: UPDATE
+테이블: PERSON
+필드: 
+쿼리:
+UPDATE PERSON SET PICTURE = :Picture WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #3]
+타입: UPDATE
+테이블: PERSON
+필드: PSNIDT
+쿼리:
+UPDATE PERSON SET PSNIDT = :PsnIdT WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #4]
+타입: UPDATE
+테이블: PERSON
+필드: PSNIDT, PSNID
+쿼리:
+UPDATE PERSON SET PSNIDT = :PsnIdT, PSNID = :PsnId WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #5]
+타입: UPDATE
+테이블: PERSON
+필드: 
+쿼리:
+UPDATE PERSON SET PNAME = :Pname, PBIRTH = :Pbirth, PIDNUM = :Pidnum, Ұ ￿￿N PIDNUM2 = :Pidnum2, SEX = :Sex, RELATION = :Relation, RELATION2 = :Relation2, Ұ ￿￿J CRIPPLED = :Crippled, BOHUN = :Bohun, AGREE = :Agree, PERINFO = :PerInfo, Ұ ￿￿F DIABETES = :Diabetes, SAMEDATE1 = :SameDate1, SAMEDATE2 = :S...
+--------------------------------------------------------------------------------
+
+[쿼리 #6]
+타입: UPDATE
+테이블: PERSON
+필드: 
+쿼리:
+UPDATE PERSON SET LASTCHECK = :LastCheck WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #7]
+타입: UPDATE
+테이블: PERSON
+필드: 
+쿼리:
+UPDATE PERSON SET PICTURE = NULL WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #8]
+타입: DELETE
+테이블: PERSON
+필드: 
+쿼리:
+DELETE FROM PERSON WHERE...
+--------------------------------------------------------------------------------
+
+================================================================================
+UI 요소: 주민번호
+================================================================================
+카테고리: personal_info_fields
+타입: input
+데이터베이스 필드: PIDNUM
+데이터베이스 테이블: PERSON
+
+관련 SQL 쿼리 (9개):
+--------------------------------------------------------------------------------
+
+[쿼리 #1]
+타입: UPDATE
+테이블: PERSON
+필드: 
+쿼리:
+UPDATE PERSON SET BLOODTYPE = :BloodType WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #2]
+타입: UPDATE
+테이블: PERSON
+필드: 
+쿼리:
+UPDATE PERSON SET PICTURE = :Picture WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #3]
+타입: UPDATE
+테이블: PERSON
+필드: PSNIDT
+쿼리:
+UPDATE PERSON SET PSNIDT = :PsnIdT WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #4]
+타입: UPDATE
+테이블: PERSON
+필드: PSNIDT, PSNID
+쿼리:
+UPDATE PERSON SET PSNIDT = :PsnIdT, PSNID = :PsnId WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #5]
+타입: UPDATE
+테이블: PERSON
+필드: 
+쿼리:
+UPDATE PERSON SET PNAME = :Pname, PBIRTH = :Pbirth, PIDNUM = :Pidnum, Ұ ￿￿N PIDNUM2 = :Pidnum2, SEX = :Sex, RELATION = :Relation, RELATION2 = :Relation2, Ұ ￿￿J CRIPPLED = :Crippled, BOHUN = :Bohun, AGREE = :Agree, PERINFO = :PerInfo, Ұ ￿￿F DIABETES = :Diabetes, SAMEDATE1 = :SameDate1, SAMEDATE2 = :S...
+--------------------------------------------------------------------------------
+
+[쿼리 #6]
+타입: UPDATE
+테이블: PERSON
+필드: 
+쿼리:
+UPDATE PERSON SET LASTCHECK = :LastCheck WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #7]
+타입: UPDATE
+테이블: MASTERAUX
+필드: PIDNUM
+쿼리:
+UPDATE MASTERAUX SET PIDNUM = :Pidnum, Pname = :Pname, CHK = :Chk, Ұ ￿￿6 SPCODE = :Spcode, BUDAM = :Budam, CAREFEE = :CareFee, Ұ ￿￿> PREGFEE = :PregFee WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #8]
+타입: UPDATE
+테이블: PERSON
+필드: 
+쿼리:
+UPDATE PERSON SET PICTURE = NULL WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #9]
+타입: DELETE
+테이블: PERSON
+필드: 
+쿼리:
+DELETE FROM PERSON WHERE...
+--------------------------------------------------------------------------------
+
+================================================================================
+UI 요소: 생년월일
+================================================================================
+카테고리: personal_info_fields
+타입: input
+데이터베이스 필드: PBIRTH
+데이터베이스 테이블: PERSON
+
+관련 SQL 쿼리 (8개):
+--------------------------------------------------------------------------------
+
+[쿼리 #1]
+타입: UPDATE
+테이블: PERSON
+필드: 
+쿼리:
+UPDATE PERSON SET BLOODTYPE = :BloodType WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #2]
+타입: UPDATE
+테이블: PERSON
+필드: 
+쿼리:
+UPDATE PERSON SET PICTURE = :Picture WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #3]
+타입: UPDATE
+테이블: PERSON
+필드: PSNIDT
+쿼리:
+UPDATE PERSON SET PSNIDT = :PsnIdT WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #4]
+타입: UPDATE
+테이블: PERSON
+필드: PSNIDT, PSNID
+쿼리:
+UPDATE PERSON SET PSNIDT = :PsnIdT, PSNID = :PsnId WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #5]
+타입: UPDATE
+테이블: PERSON
+필드: 
+쿼리:
+UPDATE PERSON SET PNAME = :Pname, PBIRTH = :Pbirth, PIDNUM = :Pidnum, Ұ ￿￿N PIDNUM2 = :Pidnum2, SEX = :Sex, RELATION = :Relation, RELATION2 = :Relation2, Ұ ￿￿J CRIPPLED = :Crippled, BOHUN = :Bohun, AGREE = :Agree, PERINFO = :PerInfo, Ұ ￿￿F DIABETES = :Diabetes, SAMEDATE1 = :SameDate1, SAMEDATE2 = :S...
+--------------------------------------------------------------------------------
+
+[쿼리 #6]
+타입: UPDATE
+테이블: PERSON
+필드: 
+쿼리:
+UPDATE PERSON SET LASTCHECK = :LastCheck WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #7]
+타입: UPDATE
+테이블: PERSON
+필드: 
+쿼리:
+UPDATE PERSON SET PICTURE = NULL WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #8]
+타입: DELETE
+테이블: PERSON
+필드: 
+쿼리:
+DELETE FROM PERSON WHERE...
+--------------------------------------------------------------------------------
+
+================================================================================
+UI 요소: 성별_남
+================================================================================
+카테고리: personal_info_fields
+타입: radio
+데이터베이스 필드: SEX
+데이터베이스 테이블: PERSON
+
+관련 SQL 쿼리 (8개):
+--------------------------------------------------------------------------------
+
+[쿼리 #1]
+타입: UPDATE
+테이블: PERSON
+필드: 
+쿼리:
+UPDATE PERSON SET BLOODTYPE = :BloodType WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #2]
+타입: UPDATE
+테이블: PERSON
+필드: 
+쿼리:
+UPDATE PERSON SET PICTURE = :Picture WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #3]
+타입: UPDATE
+테이블: PERSON
+필드: PSNIDT
+쿼리:
+UPDATE PERSON SET PSNIDT = :PsnIdT WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #4]
+타입: UPDATE
+테이블: PERSON
+필드: PSNIDT, PSNID
+쿼리:
+UPDATE PERSON SET PSNIDT = :PsnIdT, PSNID = :PsnId WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #5]
+타입: UPDATE
+테이블: PERSON
+필드: 
+쿼리:
+UPDATE PERSON SET PNAME = :Pname, PBIRTH = :Pbirth, PIDNUM = :Pidnum, Ұ ￿￿N PIDNUM2 = :Pidnum2, SEX = :Sex, RELATION = :Relation, RELATION2 = :Relation2, Ұ ￿￿J CRIPPLED = :Crippled, BOHUN = :Bohun, AGREE = :Agree, PERINFO = :PerInfo, Ұ ￿￿F DIABETES = :Diabetes, SAMEDATE1 = :SameDate1, SAMEDATE2 = :S...
+--------------------------------------------------------------------------------
+
+[쿼리 #6]
+타입: UPDATE
+테이블: PERSON
+필드: 
+쿼리:
+UPDATE PERSON SET LASTCHECK = :LastCheck WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #7]
+타입: UPDATE
+테이블: PERSON
+필드: 
+쿼리:
+UPDATE PERSON SET PICTURE = NULL WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #8]
+타입: DELETE
+테이블: PERSON
+필드: 
+쿼리:
+DELETE FROM PERSON WHERE...
+--------------------------------------------------------------------------------
+
+================================================================================
+UI 요소: 성별_여
+================================================================================
+카테고리: personal_info_fields
+타입: radio
+데이터베이스 필드: SEX
+데이터베이스 테이블: PERSON
+
+관련 SQL 쿼리 (8개):
+--------------------------------------------------------------------------------
+
+[쿼리 #1]
+타입: UPDATE
+테이블: PERSON
+필드: 
+쿼리:
+UPDATE PERSON SET BLOODTYPE = :BloodType WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #2]
+타입: UPDATE
+테이블: PERSON
+필드: 
+쿼리:
+UPDATE PERSON SET PICTURE = :Picture WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #3]
+타입: UPDATE
+테이블: PERSON
+필드: PSNIDT
+쿼리:
+UPDATE PERSON SET PSNIDT = :PsnIdT WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #4]
+타입: UPDATE
+테이블: PERSON
+필드: PSNIDT, PSNID
+쿼리:
+UPDATE PERSON SET PSNIDT = :PsnIdT, PSNID = :PsnId WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #5]
+타입: UPDATE
+테이블: PERSON
+필드: 
+쿼리:
+UPDATE PERSON SET PNAME = :Pname, PBIRTH = :Pbirth, PIDNUM = :Pidnum, Ұ ￿￿N PIDNUM2 = :Pidnum2, SEX = :Sex, RELATION = :Relation, RELATION2 = :Relation2, Ұ ￿￿J CRIPPLED = :Crippled, BOHUN = :Bohun, AGREE = :Agree, PERINFO = :PerInfo, Ұ ￿￿F DIABETES = :Diabetes, SAMEDATE1 = :SameDate1, SAMEDATE2 = :S...
+--------------------------------------------------------------------------------
+
+[쿼리 #6]
+타입: UPDATE
+테이블: PERSON
+필드: 
+쿼리:
+UPDATE PERSON SET LASTCHECK = :LastCheck WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #7]
+타입: UPDATE
+테이블: PERSON
+필드: 
+쿼리:
+UPDATE PERSON SET PICTURE = NULL WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #8]
+타입: DELETE
+테이블: PERSON
+필드: 
+쿼리:
+DELETE FROM PERSON WHERE...
+--------------------------------------------------------------------------------
+
+================================================================================
+UI 요소: 장애인
+================================================================================
+카테고리: personal_info_fields
+타입: checkbox
+데이터베이스 필드: CRIPPLED
+데이터베이스 테이블: PERSON
+
+관련 SQL 쿼리 (8개):
+--------------------------------------------------------------------------------
+
+[쿼리 #1]
+타입: UPDATE
+테이블: PERSON
+필드: 
+쿼리:
+UPDATE PERSON SET BLOODTYPE = :BloodType WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #2]
+타입: UPDATE
+테이블: PERSON
+필드: 
+쿼리:
+UPDATE PERSON SET PICTURE = :Picture WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #3]
+타입: UPDATE
+테이블: PERSON
+필드: PSNIDT
+쿼리:
+UPDATE PERSON SET PSNIDT = :PsnIdT WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #4]
+타입: UPDATE
+테이블: PERSON
+필드: PSNIDT, PSNID
+쿼리:
+UPDATE PERSON SET PSNIDT = :PsnIdT, PSNID = :PsnId WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #5]
+타입: UPDATE
+테이블: PERSON
+필드: 
+쿼리:
+UPDATE PERSON SET PNAME = :Pname, PBIRTH = :Pbirth, PIDNUM = :Pidnum, Ұ ￿￿N PIDNUM2 = :Pidnum2, SEX = :Sex, RELATION = :Relation, RELATION2 = :Relation2, Ұ ￿￿J CRIPPLED = :Crippled, BOHUN = :Bohun, AGREE = :Agree, PERINFO = :PerInfo, Ұ ￿￿F DIABETES = :Diabetes, SAMEDATE1 = :SameDate1, SAMEDATE2 = :S...
+--------------------------------------------------------------------------------
+
+[쿼리 #6]
+타입: UPDATE
+테이블: PERSON
+필드: 
+쿼리:
+UPDATE PERSON SET LASTCHECK = :LastCheck WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #7]
+타입: UPDATE
+테이블: PERSON
+필드: 
+쿼리:
+UPDATE PERSON SET PICTURE = NULL WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #8]
+타입: DELETE
+테이블: PERSON
+필드: 
+쿼리:
+DELETE FROM PERSON WHERE...
+--------------------------------------------------------------------------------
+
+================================================================================
+UI 요소: 급여제한자
+================================================================================
+카테고리: personal_info_fields
+타입: checkbox
+데이터베이스 필드: BOHUN
+데이터베이스 테이블: PERSON
+
+관련 SQL 쿼리 (8개):
+--------------------------------------------------------------------------------
+
+[쿼리 #1]
+타입: UPDATE
+테이블: PERSON
+필드: 
+쿼리:
+UPDATE PERSON SET BLOODTYPE = :BloodType WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #2]
+타입: UPDATE
+테이블: PERSON
+필드: 
+쿼리:
+UPDATE PERSON SET PICTURE = :Picture WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #3]
+타입: UPDATE
+테이블: PERSON
+필드: PSNIDT
+쿼리:
+UPDATE PERSON SET PSNIDT = :PsnIdT WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #4]
+타입: UPDATE
+테이블: PERSON
+필드: PSNIDT, PSNID
+쿼리:
+UPDATE PERSON SET PSNIDT = :PsnIdT, PSNID = :PsnId WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #5]
+타입: UPDATE
+테이블: PERSON
+필드: 
+쿼리:
+UPDATE PERSON SET PNAME = :Pname, PBIRTH = :Pbirth, PIDNUM = :Pidnum, Ұ ￿￿N PIDNUM2 = :Pidnum2, SEX = :Sex, RELATION = :Relation, RELATION2 = :Relation2, Ұ ￿￿J CRIPPLED = :Crippled, BOHUN = :Bohun, AGREE = :Agree, PERINFO = :PerInfo, Ұ ￿￿F DIABETES = :Diabetes, SAMEDATE1 = :SameDate1, SAMEDATE2 = :S...
+--------------------------------------------------------------------------------
+
+[쿼리 #6]
+타입: UPDATE
+테이블: PERSON
+필드: 
+쿼리:
+UPDATE PERSON SET LASTCHECK = :LastCheck WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #7]
+타입: UPDATE
+테이블: PERSON
+필드: 
+쿼리:
+UPDATE PERSON SET PICTURE = NULL WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #8]
+타입: DELETE
+테이블: PERSON
+필드: 
+쿼리:
+DELETE FROM PERSON WHERE...
+--------------------------------------------------------------------------------
+
+================================================================================
+UI 요소: 개인정보활용_동의
+================================================================================
+카테고리: personal_info_fields
+타입: checkbox
+데이터베이스 필드: AGREE
+데이터베이스 테이블: PERSON
+
+관련 SQL 쿼리 (8개):
+--------------------------------------------------------------------------------
+
+[쿼리 #1]
+타입: UPDATE
+테이블: PERSON
+필드: 
+쿼리:
+UPDATE PERSON SET BLOODTYPE = :BloodType WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #2]
+타입: UPDATE
+테이블: PERSON
+필드: 
+쿼리:
+UPDATE PERSON SET PICTURE = :Picture WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #3]
+타입: UPDATE
+테이블: PERSON
+필드: PSNIDT
+쿼리:
+UPDATE PERSON SET PSNIDT = :PsnIdT WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #4]
+타입: UPDATE
+테이블: PERSON
+필드: PSNIDT, PSNID
+쿼리:
+UPDATE PERSON SET PSNIDT = :PsnIdT, PSNID = :PsnId WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #5]
+타입: UPDATE
+테이블: PERSON
+필드: 
+쿼리:
+UPDATE PERSON SET PNAME = :Pname, PBIRTH = :Pbirth, PIDNUM = :Pidnum, Ұ ￿￿N PIDNUM2 = :Pidnum2, SEX = :Sex, RELATION = :Relation, RELATION2 = :Relation2, Ұ ￿￿J CRIPPLED = :Crippled, BOHUN = :Bohun, AGREE = :Agree, PERINFO = :PerInfo, Ұ ￿￿F DIABETES = :Diabetes, SAMEDATE1 = :SameDate1, SAMEDATE2 = :S...
+--------------------------------------------------------------------------------
+
+[쿼리 #6]
+타입: UPDATE
+테이블: PERSON
+필드: 
+쿼리:
+UPDATE PERSON SET LASTCHECK = :LastCheck WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #7]
+타입: UPDATE
+테이블: PERSON
+필드: 
+쿼리:
+UPDATE PERSON SET PICTURE = NULL WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #8]
+타입: DELETE
+테이블: PERSON
+필드: 
+쿼리:
+DELETE FROM PERSON WHERE...
+--------------------------------------------------------------------------------
+
+================================================================================
+UI 요소: 세대주명
+================================================================================
+카테고리: family_info_fields
+타입: input
+데이터베이스 필드: FNAME
+데이터베이스 테이블: CARD
+
+관련 SQL 쿼리 (5개):
+--------------------------------------------------------------------------------
+
+[쿼리 #1]
+타입: UPDATE
+테이블: CARD
+필드: 
+쿼리:
+UPDATE CARD SET ENDDATE = :EDate1 WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #2]
+타입: UPDATE
+테이블: CARD
+필드: 
+쿼리:
+UPDATE CARD SET FNAME = :Fname WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #3]
+타입: UPDATE
+테이블: CARD
+필드: 
+쿼리:
+UPDATE CARD SET ENDDATE = :EndDate, BEGINDATE = :BeginDate, Ұ ￿￿: FNAME = :Fname, FIDNUM = :Fidnum, UNIONCODE = :UnionCode, Ұ ￿￿> CARDNUM = :CardNum, COMPANY = :Company, CARETYPE = :CareType, Ұ ￿￿P CHA = :Cha, OTHERAREA = :OtherArea WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #4]
+타입: UPDATE
+테이블: CARD
+필드: 
+쿼리:
+UPDATE CARD SET ENDDATE = :EndDate WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #5]
+타입: DELETE
+테이블: CARD
+필드: 
+쿼리:
+DELETE FROM CARD WHERE...
+--------------------------------------------------------------------------------
+
+================================================================================
+UI 요소: 가족번호
+================================================================================
+카테고리: family_info_fields
+타입: input
+데이터베이스 필드: FCODE
+데이터베이스 테이블: FAMILY
+
+관련 SQL 쿼리 (2개):
+--------------------------------------------------------------------------------
+
+[쿼리 #1]
+타입: INSERT
+테이블: LAST, FAMILY
+필드: FCODE
+쿼리:
+UPDATE LAST SET FCODE = :Fcode Ұ ￿￿* INSERT INTO FAMILY (FCODE) VALUES (:Fcode) Ұ ￿￿5 UPDATE PERSON SET FCODE = :Fcode WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #2]
+타입: UPDATE
+테이블: FAMILY
+필드: 
+쿼리:
+UPDATE FAMILY SET Ұ ￿￿ ZIPCODE2 = :ZipCode2, N2 = :N2, Ұ ￿￿, HOUSENUM = :HouseNum, ZIPCODE3 = :ZipCode3, Ұ ￿￿@ ZONE3 = :Zone3, HOUSENUM3 = :HouseNum3, LOCALCODE = :LocalCode, Ұ ￿￿8 PHONENUM = :PhoneNum, HPCODE = :HPcode, HPNUM = :HPnum, Ұ ￿￿1 EMAIL = :Email, MEMO = :Memo, FIXZONE = :FixZone Ұ ￿￿ WHE...
+--------------------------------------------------------------------------------
+
+================================================================================
+UI 요소: 주민번호
+================================================================================
+카테고리: family_info_fields
+타입: input
+데이터베이스 필드: FIDNUM
+데이터베이스 테이블: CARD
+
+관련 SQL 쿼리 (5개):
+--------------------------------------------------------------------------------
+
+[쿼리 #1]
+타입: UPDATE
+테이블: CARD
+필드: 
+쿼리:
+UPDATE CARD SET ENDDATE = :EDate1 WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #2]
+타입: UPDATE
+테이블: CARD
+필드: 
+쿼리:
+UPDATE CARD SET FNAME = :Fname WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #3]
+타입: UPDATE
+테이블: CARD
+필드: 
+쿼리:
+UPDATE CARD SET ENDDATE = :EndDate, BEGINDATE = :BeginDate, Ұ ￿￿: FNAME = :Fname, FIDNUM = :Fidnum, UNIONCODE = :UnionCode, Ұ ￿￿> CARDNUM = :CardNum, COMPANY = :Company, CARETYPE = :CareType, Ұ ￿￿P CHA = :Cha, OTHERAREA = :OtherArea WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #4]
+타입: UPDATE
+테이블: CARD
+필드: 
+쿼리:
+UPDATE CARD SET ENDDATE = :EndDate WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #5]
+타입: DELETE
+테이블: CARD
+필드: 
+쿼리:
+DELETE FROM CARD WHERE...
+--------------------------------------------------------------------------------
+
+================================================================================
+UI 요소: 적용기간_시작
+================================================================================
+카테고리: family_info_fields
+타입: date
+데이터베이스 필드: BEGINDATE
+데이터베이스 테이블: CARD
+
+관련 SQL 쿼리 (5개):
+--------------------------------------------------------------------------------
+
+[쿼리 #1]
+타입: UPDATE
+테이블: CARD
+필드: 
+쿼리:
+UPDATE CARD SET ENDDATE = :EDate1 WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #2]
+타입: UPDATE
+테이블: CARD
+필드: 
+쿼리:
+UPDATE CARD SET FNAME = :Fname WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #3]
+타입: UPDATE
+테이블: CARD
+필드: 
+쿼리:
+UPDATE CARD SET ENDDATE = :EndDate, BEGINDATE = :BeginDate, Ұ ￿￿: FNAME = :Fname, FIDNUM = :Fidnum, UNIONCODE = :UnionCode, Ұ ￿￿> CARDNUM = :CardNum, COMPANY = :Company, CARETYPE = :CareType, Ұ ￿￿P CHA = :Cha, OTHERAREA = :OtherArea WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #4]
+타입: UPDATE
+테이블: CARD
+필드: 
+쿼리:
+UPDATE CARD SET ENDDATE = :EndDate WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #5]
+타입: DELETE
+테이블: CARD
+필드: 
+쿼리:
+DELETE FROM CARD WHERE...
+--------------------------------------------------------------------------------
+
+================================================================================
+UI 요소: 적용기간_종료
+================================================================================
+카테고리: family_info_fields
+타입: date
+데이터베이스 필드: ENDDATE
+데이터베이스 테이블: CARD
+
+관련 SQL 쿼리 (5개):
+--------------------------------------------------------------------------------
+
+[쿼리 #1]
+타입: UPDATE
+테이블: CARD
+필드: 
+쿼리:
+UPDATE CARD SET ENDDATE = :EDate1 WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #2]
+타입: UPDATE
+테이블: CARD
+필드: 
+쿼리:
+UPDATE CARD SET FNAME = :Fname WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #3]
+타입: UPDATE
+테이블: CARD
+필드: 
+쿼리:
+UPDATE CARD SET ENDDATE = :EndDate, BEGINDATE = :BeginDate, Ұ ￿￿: FNAME = :Fname, FIDNUM = :Fidnum, UNIONCODE = :UnionCode, Ұ ￿￿> CARDNUM = :CardNum, COMPANY = :Company, CARETYPE = :CareType, Ұ ￿￿P CHA = :Cha, OTHERAREA = :OtherArea WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #4]
+타입: UPDATE
+테이블: CARD
+필드: 
+쿼리:
+UPDATE CARD SET ENDDATE = :EndDate WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #5]
+타입: DELETE
+테이블: CARD
+필드: 
+쿼리:
+DELETE FROM CARD WHERE...
+--------------------------------------------------------------------------------
+
+================================================================================
+UI 요소: 구분
+================================================================================
+카테고리: family_info_fields
+타입: dropdown
+데이터베이스 필드: CARETYPE
+데이터베이스 테이블: CARD
+
+관련 SQL 쿼리 (5개):
+--------------------------------------------------------------------------------
+
+[쿼리 #1]
+타입: UPDATE
+테이블: CARD
+필드: 
+쿼리:
+UPDATE CARD SET ENDDATE = :EDate1 WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #2]
+타입: UPDATE
+테이블: CARD
+필드: 
+쿼리:
+UPDATE CARD SET FNAME = :Fname WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #3]
+타입: UPDATE
+테이블: CARD
+필드: 
+쿼리:
+UPDATE CARD SET ENDDATE = :EndDate, BEGINDATE = :BeginDate, Ұ ￿￿: FNAME = :Fname, FIDNUM = :Fidnum, UNIONCODE = :UnionCode, Ұ ￿￿> CARDNUM = :CardNum, COMPANY = :Company, CARETYPE = :CareType, Ұ ￿￿P CHA = :Cha, OTHERAREA = :OtherArea WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #4]
+타입: UPDATE
+테이블: CARD
+필드: 
+쿼리:
+UPDATE CARD SET ENDDATE = :EndDate WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #5]
+타입: DELETE
+테이블: CARD
+필드: 
+쿼리:
+DELETE FROM CARD WHERE...
+--------------------------------------------------------------------------------
+
+================================================================================
+UI 요소: 증번호
+================================================================================
+카테고리: family_info_fields
+타입: input
+데이터베이스 필드: CARDNUM
+데이터베이스 테이블: CARD
+
+관련 SQL 쿼리 (5개):
+--------------------------------------------------------------------------------
+
+[쿼리 #1]
+타입: UPDATE
+테이블: CARD
+필드: 
+쿼리:
+UPDATE CARD SET ENDDATE = :EDate1 WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #2]
+타입: UPDATE
+테이블: CARD
+필드: 
+쿼리:
+UPDATE CARD SET FNAME = :Fname WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #3]
+타입: UPDATE
+테이블: CARD
+필드: 
+쿼리:
+UPDATE CARD SET ENDDATE = :EndDate, BEGINDATE = :BeginDate, Ұ ￿￿: FNAME = :Fname, FIDNUM = :Fidnum, UNIONCODE = :UnionCode, Ұ ￿￿> CARDNUM = :CardNum, COMPANY = :Company, CARETYPE = :CareType, Ұ ￿￿P CHA = :Cha, OTHERAREA = :OtherArea WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #4]
+타입: UPDATE
+테이블: CARD
+필드: 
+쿼리:
+UPDATE CARD SET ENDDATE = :EndDate WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #5]
+타입: DELETE
+테이블: CARD
+필드: 
+쿼리:
+DELETE FROM CARD WHERE...
+--------------------------------------------------------------------------------
+
+================================================================================
+UI 요소: 직장
+================================================================================
+카테고리: family_info_fields
+타입: input
+데이터베이스 필드: COMPANY
+데이터베이스 테이블: CARD
+
+관련 SQL 쿼리 (5개):
+--------------------------------------------------------------------------------
+
+[쿼리 #1]
+타입: UPDATE
+테이블: CARD
+필드: 
+쿼리:
+UPDATE CARD SET ENDDATE = :EDate1 WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #2]
+타입: UPDATE
+테이블: CARD
+필드: 
+쿼리:
+UPDATE CARD SET FNAME = :Fname WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #3]
+타입: UPDATE
+테이블: CARD
+필드: 
+쿼리:
+UPDATE CARD SET ENDDATE = :EndDate, BEGINDATE = :BeginDate, Ұ ￿￿: FNAME = :Fname, FIDNUM = :Fidnum, UNIONCODE = :UnionCode, Ұ ￿￿> CARDNUM = :CardNum, COMPANY = :Company, CARETYPE = :CareType, Ұ ￿￿P CHA = :Cha, OTHERAREA = :OtherArea WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #4]
+타입: UPDATE
+테이블: CARD
+필드: 
+쿼리:
+UPDATE CARD SET ENDDATE = :EndDate WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #5]
+타입: DELETE
+테이블: CARD
+필드: 
+쿼리:
+DELETE FROM CARD WHERE...
+--------------------------------------------------------------------------------
+
+================================================================================
+UI 요소: 우편번호
+================================================================================
+카테고리: address_fields
+타입: input
+데이터베이스 필드: POSTAL_CODE
+데이터베이스 테이블: PERSON
+
+관련 SQL 쿼리 (8개):
+--------------------------------------------------------------------------------
+
+[쿼리 #1]
+타입: UPDATE
+테이블: PERSON
+필드: 
+쿼리:
+UPDATE PERSON SET BLOODTYPE = :BloodType WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #2]
+타입: UPDATE
+테이블: PERSON
+필드: 
+쿼리:
+UPDATE PERSON SET PICTURE = :Picture WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #3]
+타입: UPDATE
+테이블: PERSON
+필드: PSNIDT
+쿼리:
+UPDATE PERSON SET PSNIDT = :PsnIdT WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #4]
+타입: UPDATE
+테이블: PERSON
+필드: PSNIDT, PSNID
+쿼리:
+UPDATE PERSON SET PSNIDT = :PsnIdT, PSNID = :PsnId WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #5]
+타입: UPDATE
+테이블: PERSON
+필드: 
+쿼리:
+UPDATE PERSON SET PNAME = :Pname, PBIRTH = :Pbirth, PIDNUM = :Pidnum, Ұ ￿￿N PIDNUM2 = :Pidnum2, SEX = :Sex, RELATION = :Relation, RELATION2 = :Relation2, Ұ ￿￿J CRIPPLED = :Crippled, BOHUN = :Bohun, AGREE = :Agree, PERINFO = :PerInfo, Ұ ￿￿F DIABETES = :Diabetes, SAMEDATE1 = :SameDate1, SAMEDATE2 = :S...
+--------------------------------------------------------------------------------
+
+[쿼리 #6]
+타입: UPDATE
+테이블: PERSON
+필드: 
+쿼리:
+UPDATE PERSON SET LASTCHECK = :LastCheck WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #7]
+타입: UPDATE
+테이블: PERSON
+필드: 
+쿼리:
+UPDATE PERSON SET PICTURE = NULL WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #8]
+타입: DELETE
+테이블: PERSON
+필드: 
+쿼리:
+DELETE FROM PERSON WHERE...
+--------------------------------------------------------------------------------
+
+================================================================================
+UI 요소: 주소
+================================================================================
+카테고리: address_fields
+타입: input
+데이터베이스 필드: ADDRESS
+데이터베이스 테이블: PERSON
+
+관련 SQL 쿼리 (8개):
+--------------------------------------------------------------------------------
+
+[쿼리 #1]
+타입: UPDATE
+테이블: PERSON
+필드: 
+쿼리:
+UPDATE PERSON SET BLOODTYPE = :BloodType WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #2]
+타입: UPDATE
+테이블: PERSON
+필드: 
+쿼리:
+UPDATE PERSON SET PICTURE = :Picture WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #3]
+타입: UPDATE
+테이블: PERSON
+필드: PSNIDT
+쿼리:
+UPDATE PERSON SET PSNIDT = :PsnIdT WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #4]
+타입: UPDATE
+테이블: PERSON
+필드: PSNIDT, PSNID
+쿼리:
+UPDATE PERSON SET PSNIDT = :PsnIdT, PSNID = :PsnId WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #5]
+타입: UPDATE
+테이블: PERSON
+필드: 
+쿼리:
+UPDATE PERSON SET PNAME = :Pname, PBIRTH = :Pbirth, PIDNUM = :Pidnum, Ұ ￿￿N PIDNUM2 = :Pidnum2, SEX = :Sex, RELATION = :Relation, RELATION2 = :Relation2, Ұ ￿￿J CRIPPLED = :Crippled, BOHUN = :Bohun, AGREE = :Agree, PERINFO = :PerInfo, Ұ ￿￿F DIABETES = :Diabetes, SAMEDATE1 = :SameDate1, SAMEDATE2 = :S...
+--------------------------------------------------------------------------------
+
+[쿼리 #6]
+타입: UPDATE
+테이블: PERSON
+필드: 
+쿼리:
+UPDATE PERSON SET LASTCHECK = :LastCheck WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #7]
+타입: UPDATE
+테이블: PERSON
+필드: 
+쿼리:
+UPDATE PERSON SET PICTURE = NULL WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #8]
+타입: DELETE
+테이블: PERSON
+필드: 
+쿼리:
+DELETE FROM PERSON WHERE...
+--------------------------------------------------------------------------------
+
+================================================================================
+UI 요소: 전화번호
+================================================================================
+카테고리: address_fields
+타입: input
+데이터베이스 필드: PHONE
+데이터베이스 테이블: PERSON
+
+관련 SQL 쿼리 (8개):
+--------------------------------------------------------------------------------
+
+[쿼리 #1]
+타입: UPDATE
+테이블: PERSON
+필드: 
+쿼리:
+UPDATE PERSON SET BLOODTYPE = :BloodType WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #2]
+타입: UPDATE
+테이블: PERSON
+필드: 
+쿼리:
+UPDATE PERSON SET PICTURE = :Picture WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #3]
+타입: UPDATE
+테이블: PERSON
+필드: PSNIDT
+쿼리:
+UPDATE PERSON SET PSNIDT = :PsnIdT WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #4]
+타입: UPDATE
+테이블: PERSON
+필드: PSNIDT, PSNID
+쿼리:
+UPDATE PERSON SET PSNIDT = :PsnIdT, PSNID = :PsnId WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #5]
+타입: UPDATE
+테이블: PERSON
+필드: 
+쿼리:
+UPDATE PERSON SET PNAME = :Pname, PBIRTH = :Pbirth, PIDNUM = :Pidnum, Ұ ￿￿N PIDNUM2 = :Pidnum2, SEX = :Sex, RELATION = :Relation, RELATION2 = :Relation2, Ұ ￿￿J CRIPPLED = :Crippled, BOHUN = :Bohun, AGREE = :Agree, PERINFO = :PerInfo, Ұ ￿￿F DIABETES = :Diabetes, SAMEDATE1 = :SameDate1, SAMEDATE2 = :S...
+--------------------------------------------------------------------------------
+
+[쿼리 #6]
+타입: UPDATE
+테이블: PERSON
+필드: 
+쿼리:
+UPDATE PERSON SET LASTCHECK = :LastCheck WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #7]
+타입: UPDATE
+테이블: PERSON
+필드: 
+쿼리:
+UPDATE PERSON SET PICTURE = NULL WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #8]
+타입: DELETE
+테이블: PERSON
+필드: 
+쿼리:
+DELETE FROM PERSON WHERE...
+--------------------------------------------------------------------------------
+
+================================================================================
+UI 요소: 휴대전화
+================================================================================
+카테고리: address_fields
+타입: input
+데이터베이스 필드: MOBILE
+데이터베이스 테이블: PERSON
+
+관련 SQL 쿼리 (8개):
+--------------------------------------------------------------------------------
+
+[쿼리 #1]
+타입: UPDATE
+테이블: PERSON
+필드: 
+쿼리:
+UPDATE PERSON SET BLOODTYPE = :BloodType WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #2]
+타입: UPDATE
+테이블: PERSON
+필드: 
+쿼리:
+UPDATE PERSON SET PICTURE = :Picture WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #3]
+타입: UPDATE
+테이블: PERSON
+필드: PSNIDT
+쿼리:
+UPDATE PERSON SET PSNIDT = :PsnIdT WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #4]
+타입: UPDATE
+테이블: PERSON
+필드: PSNIDT, PSNID
+쿼리:
+UPDATE PERSON SET PSNIDT = :PsnIdT, PSNID = :PsnId WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #5]
+타입: UPDATE
+테이블: PERSON
+필드: 
+쿼리:
+UPDATE PERSON SET PNAME = :Pname, PBIRTH = :Pbirth, PIDNUM = :Pidnum, Ұ ￿￿N PIDNUM2 = :Pidnum2, SEX = :Sex, RELATION = :Relation, RELATION2 = :Relation2, Ұ ￿￿J CRIPPLED = :Crippled, BOHUN = :Bohun, AGREE = :Agree, PERINFO = :PerInfo, Ұ ￿￿F DIABETES = :Diabetes, SAMEDATE1 = :SameDate1, SAMEDATE2 = :S...
+--------------------------------------------------------------------------------
+
+[쿼리 #6]
+타입: UPDATE
+테이블: PERSON
+필드: 
+쿼리:
+UPDATE PERSON SET LASTCHECK = :LastCheck WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #7]
+타입: UPDATE
+테이블: PERSON
+필드: 
+쿼리:
+UPDATE PERSON SET PICTURE = NULL WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #8]
+타입: DELETE
+테이블: PERSON
+필드: 
+쿼리:
+DELETE FROM PERSON WHERE...
+--------------------------------------------------------------------------------
+
+================================================================================
+UI 요소: 체중
+================================================================================
+카테고리: vital_fields
+타입: input
+데이터베이스 필드: WEIGHT
+데이터베이스 테이블: CHECKPERSON
+
+관련 SQL 쿼리 (2개):
+--------------------------------------------------------------------------------
+
+[쿼리 #1]
+타입: UPDATE
+테이블: CHECKPERSON
+필드: 
+쿼리:
+UPDATE CHECKPERSON SET WEIGHT = :WEIGHT, HEIGHT = :HEIGHT, TEMPERATUR = :TEMPERATUR, PULSE = :PULSE, SYSTOLIC = :SYSTOLIC, DIASTOLIC = :DIASTOLIC WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #2]
+타입: DELETE
+테이블: CHECKPERSON
+필드: 
+쿼리:
+DELETE FROM CHECKPERSON WHERE...
+--------------------------------------------------------------------------------
+
+================================================================================
+UI 요소: 키
+================================================================================
+카테고리: vital_fields
+타입: input
+데이터베이스 필드: HEIGHT
+데이터베이스 테이블: CHECKPERSON
+
+관련 SQL 쿼리 (2개):
+--------------------------------------------------------------------------------
+
+[쿼리 #1]
+타입: UPDATE
+테이블: CHECKPERSON
+필드: 
+쿼리:
+UPDATE CHECKPERSON SET WEIGHT = :WEIGHT, HEIGHT = :HEIGHT, TEMPERATUR = :TEMPERATUR, PULSE = :PULSE, SYSTOLIC = :SYSTOLIC, DIASTOLIC = :DIASTOLIC WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #2]
+타입: DELETE
+테이블: CHECKPERSON
+필드: 
+쿼리:
+DELETE FROM CHECKPERSON WHERE...
+--------------------------------------------------------------------------------
+
+================================================================================
+UI 요소: 체온
+================================================================================
+카테고리: vital_fields
+타입: input
+데이터베이스 필드: TEMPERATUR
+데이터베이스 테이블: CHECKPERSON
+
+관련 SQL 쿼리 (2개):
+--------------------------------------------------------------------------------
+
+[쿼리 #1]
+타입: UPDATE
+테이블: CHECKPERSON
+필드: 
+쿼리:
+UPDATE CHECKPERSON SET WEIGHT = :WEIGHT, HEIGHT = :HEIGHT, TEMPERATUR = :TEMPERATUR, PULSE = :PULSE, SYSTOLIC = :SYSTOLIC, DIASTOLIC = :DIASTOLIC WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #2]
+타입: DELETE
+테이블: CHECKPERSON
+필드: 
+쿼리:
+DELETE FROM CHECKPERSON WHERE...
+--------------------------------------------------------------------------------
+
+================================================================================
+UI 요소: 맥박
+================================================================================
+카테고리: vital_fields
+타입: input
+데이터베이스 필드: PULSE
+데이터베이스 테이블: CHECKPERSON
+
+관련 SQL 쿼리 (2개):
+--------------------------------------------------------------------------------
+
+[쿼리 #1]
+타입: UPDATE
+테이블: CHECKPERSON
+필드: 
+쿼리:
+UPDATE CHECKPERSON SET WEIGHT = :WEIGHT, HEIGHT = :HEIGHT, TEMPERATUR = :TEMPERATUR, PULSE = :PULSE, SYSTOLIC = :SYSTOLIC, DIASTOLIC = :DIASTOLIC WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #2]
+타입: DELETE
+테이블: CHECKPERSON
+필드: 
+쿼리:
+DELETE FROM CHECKPERSON WHERE...
+--------------------------------------------------------------------------------
+
+================================================================================
+UI 요소: 수축기혈압
+================================================================================
+카테고리: vital_fields
+타입: input
+데이터베이스 필드: SYSTOLIC
+데이터베이스 테이블: CHECKPERSON
+
+관련 SQL 쿼리 (2개):
+--------------------------------------------------------------------------------
+
+[쿼리 #1]
+타입: UPDATE
+테이블: CHECKPERSON
+필드: 
+쿼리:
+UPDATE CHECKPERSON SET WEIGHT = :WEIGHT, HEIGHT = :HEIGHT, TEMPERATUR = :TEMPERATUR, PULSE = :PULSE, SYSTOLIC = :SYSTOLIC, DIASTOLIC = :DIASTOLIC WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #2]
+타입: DELETE
+테이블: CHECKPERSON
+필드: 
+쿼리:
+DELETE FROM CHECKPERSON WHERE...
+--------------------------------------------------------------------------------
+
+================================================================================
+UI 요소: 이완기혈압
+================================================================================
+카테고리: vital_fields
+타입: input
+데이터베이스 필드: DIASTOLIC
+데이터베이스 테이블: CHECKPERSON
+
+관련 SQL 쿼리 (2개):
+--------------------------------------------------------------------------------
+
+[쿼리 #1]
+타입: UPDATE
+테이블: CHECKPERSON
+필드: 
+쿼리:
+UPDATE CHECKPERSON SET WEIGHT = :WEIGHT, HEIGHT = :HEIGHT, TEMPERATUR = :TEMPERATUR, PULSE = :PULSE, SYSTOLIC = :SYSTOLIC, DIASTOLIC = :DIASTOLIC WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #2]
+타입: DELETE
+테이블: CHECKPERSON
+필드: 
+쿼리:
+DELETE FROM CHECKPERSON WHERE...
+--------------------------------------------------------------------------------
+
+================================================================================
+UI 요소: 미수금
+================================================================================
+카테고리: payment_fields
+타입: input
+데이터베이스 필드: MISU
+데이터베이스 테이블: FEELOG
+
+관련 SQL 쿼리 (1개):
+--------------------------------------------------------------------------------
+
+[쿼리 #1]
+타입: UPDATE
+테이블: FEELOG
+필드: MISU
+쿼리:
+UPDATE FEELOG SET MISU = :Misu, WHANBUL = :Whanbul, WHANSU = :Whansu Ұ ￿￿+ WHERE...
+--------------------------------------------------------------------------------
+
+================================================================================
+UI 요소: 완불
+================================================================================
+카테고리: payment_fields
+타입: input
+데이터베이스 필드: WHANBUL
+데이터베이스 테이블: FEELOG
+
+관련 SQL 쿼리 (1개):
+--------------------------------------------------------------------------------
+
+[쿼리 #1]
+타입: UPDATE
+테이블: FEELOG
+필드: MISU
+쿼리:
+UPDATE FEELOG SET MISU = :Misu, WHANBUL = :Whanbul, WHANSU = :Whansu Ұ ￿￿+ WHERE...
+--------------------------------------------------------------------------------
+
+================================================================================
+UI 요소: 완수
+================================================================================
+카테고리: payment_fields
+타입: input
+데이터베이스 필드: WHANSU
+데이터베이스 테이블: FEELOG
+
+관련 SQL 쿼리 (1개):
+--------------------------------------------------------------------------------
+
+[쿼리 #1]
+타입: UPDATE
+테이블: FEELOG
+필드: MISU
+쿼리:
+UPDATE FEELOG SET MISU = :Misu, WHANBUL = :Whanbul, WHANSU = :Whansu Ұ ￿￿+ WHERE...
+--------------------------------------------------------------------------------
+
+================================================================================
+UI 요소: 접수
+================================================================================
+카테고리: treatment_fields
+타입: button
+데이터베이스 필드: ACCEPT
+데이터베이스 테이블: MASTERAUX
+
+관련 SQL 쿼리 (5개):
+--------------------------------------------------------------------------------
+
+[쿼리 #1]
+타입: UPDATE
+테이블: MASTERAUX
+필드: 
+쿼리:
+UPDATE MASTERAUX SET Ұ ￿￿ 수진자 진료확인번호 내려받기 실패... 다시 시도해주세요. Ұ ￿￿@ UPDATE MASTERAUX SET ACCEPT = :Accept, ACCEPTNUM2 = :AcceptNum2, Ұ ￿￿( ERRCODE = :ErrCode, SELFEE2 = :SelFee2, Ұ ￿￿...
+--------------------------------------------------------------------------------
+
+[쿼리 #2]
+타입: UPDATE
+테이블: MASTERAUX
+필드: 
+쿼리:
+UPDATE MASTERAUX SET ACCEPT = NULL, ACCEPTNUM = NULL, Ұ ￿￿# ACCEPTNUM2 = NULL, SELFEE2 = NULL, Ұ ￿￿' REQCAREFEE2 = NULL, REMCAREFEE = NULL, Ұ ￿￿( REQPREGFEE2 := NULL, REMPREGFEE = NULL, Ұ ￿￿< PRESNUM2 := NULL, DX2 = NULL, DX2SP = NULL, REQFEE2 = NULL, Ұ ￿￿K GENFEE2 := NULL, ERRCODE = NULL WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #3]
+타입: UPDATE
+테이블: MASTERAUX
+필드: PIDNUM
+쿼리:
+UPDATE MASTERAUX SET PIDNUM = :Pidnum, Pname = :Pname, CHK = :Chk, Ұ ￿￿6 SPCODE = :Spcode, BUDAM = :Budam, CAREFEE = :CareFee, Ұ ￿￿> PREGFEE = :PregFee WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #4]
+타입: UPDATE
+테이블: MASTERAUX
+필드: 
+쿼리:
+UPDATE MASTERAUX SET CHK := :Chk, SPCODE = :Spcode, Ұ ￿￿D ACCEPT = :Accept, ACCEPTNUM = :AcceptNum, ACCEPTNUM2 = :AcceptNum2, Ұ ￿￿ SELFEE2 = :SelFee2, Ұ ￿￿6 REQCAREFEE2 = :ReqCareFee2, REMCAREFEE = :RemCareFee, Ұ ￿￿6 REQPREGFEE2 = :ReqPregFee2, REMPREGFEE = :RemPregFee, Ұ ￿￿F PRESNUM2 = :PresNum2, D...
+--------------------------------------------------------------------------------
+
+[쿼리 #5]
+타입: UPDATE
+테이블: MASTERAUX
+필드: 
+쿼리:
+UPDATE MASTERAUX SET CHK = :Chk, SPCODE = :Spcode, Ұ ￿￿> ACCEPT = :Accept, ACCEPTNUM = :AcceptNum, SELFEE2 = :SelFee2, Ұ ￿￿6 REQCAREFEE2 = :ReqCareFee2, REMCAREFEE = :RemCareFee, Ұ ￿￿6 REQPREGFEE2 = :ReqPregFee2, REMPREGFEE = :RemPregFee, Ұ ￿￿F PRESNUM2 = :PresNum2, DX2 = :Dx2, DX2SP = :Dx2Sp, REQFE...
+--------------------------------------------------------------------------------
+
+================================================================================
+UI 요소: 접수번호
+================================================================================
+카테고리: treatment_fields
+타입: input
+데이터베이스 필드: ACCEPTNUM
+데이터베이스 테이블: MASTERAUX
+
+관련 SQL 쿼리 (5개):
+--------------------------------------------------------------------------------
+
+[쿼리 #1]
+타입: UPDATE
+테이블: MASTERAUX
+필드: 
+쿼리:
+UPDATE MASTERAUX SET Ұ ￿￿ 수진자 진료확인번호 내려받기 실패... 다시 시도해주세요. Ұ ￿￿@ UPDATE MASTERAUX SET ACCEPT = :Accept, ACCEPTNUM2 = :AcceptNum2, Ұ ￿￿( ERRCODE = :ErrCode, SELFEE2 = :SelFee2, Ұ ￿￿...
+--------------------------------------------------------------------------------
+
+[쿼리 #2]
+타입: UPDATE
+테이블: MASTERAUX
+필드: 
+쿼리:
+UPDATE MASTERAUX SET ACCEPT = NULL, ACCEPTNUM = NULL, Ұ ￿￿# ACCEPTNUM2 = NULL, SELFEE2 = NULL, Ұ ￿￿' REQCAREFEE2 = NULL, REMCAREFEE = NULL, Ұ ￿￿( REQPREGFEE2 := NULL, REMPREGFEE = NULL, Ұ ￿￿< PRESNUM2 := NULL, DX2 = NULL, DX2SP = NULL, REQFEE2 = NULL, Ұ ￿￿K GENFEE2 := NULL, ERRCODE = NULL WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #3]
+타입: UPDATE
+테이블: MASTERAUX
+필드: PIDNUM
+쿼리:
+UPDATE MASTERAUX SET PIDNUM = :Pidnum, Pname = :Pname, CHK = :Chk, Ұ ￿￿6 SPCODE = :Spcode, BUDAM = :Budam, CAREFEE = :CareFee, Ұ ￿￿> PREGFEE = :PregFee WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #4]
+타입: UPDATE
+테이블: MASTERAUX
+필드: 
+쿼리:
+UPDATE MASTERAUX SET CHK := :Chk, SPCODE = :Spcode, Ұ ￿￿D ACCEPT = :Accept, ACCEPTNUM = :AcceptNum, ACCEPTNUM2 = :AcceptNum2, Ұ ￿￿ SELFEE2 = :SelFee2, Ұ ￿￿6 REQCAREFEE2 = :ReqCareFee2, REMCAREFEE = :RemCareFee, Ұ ￿￿6 REQPREGFEE2 = :ReqPregFee2, REMPREGFEE = :RemPregFee, Ұ ￿￿F PRESNUM2 = :PresNum2, D...
+--------------------------------------------------------------------------------
+
+[쿼리 #5]
+타입: UPDATE
+테이블: MASTERAUX
+필드: 
+쿼리:
+UPDATE MASTERAUX SET CHK = :Chk, SPCODE = :Spcode, Ұ ￿￿> ACCEPT = :Accept, ACCEPTNUM = :AcceptNum, SELFEE2 = :SelFee2, Ұ ￿￿6 REQCAREFEE2 = :ReqCareFee2, REMCAREFEE = :RemCareFee, Ұ ￿￿6 REQPREGFEE2 = :ReqPregFee2, REMPREGFEE = :RemPregFee, Ұ ￿￿F PRESNUM2 = :PresNum2, DX2 = :Dx2, DX2SP = :Dx2Sp, REQFE...
+--------------------------------------------------------------------------------
+
+================================================================================
+UI 요소: 접수번호2
+================================================================================
+카테고리: treatment_fields
+타입: input
+데이터베이스 필드: ACCEPTNUM2
+데이터베이스 테이블: MASTERAUX
+
+관련 SQL 쿼리 (5개):
+--------------------------------------------------------------------------------
+
+[쿼리 #1]
+타입: UPDATE
+테이블: MASTERAUX
+필드: 
+쿼리:
+UPDATE MASTERAUX SET Ұ ￿￿ 수진자 진료확인번호 내려받기 실패... 다시 시도해주세요. Ұ ￿￿@ UPDATE MASTERAUX SET ACCEPT = :Accept, ACCEPTNUM2 = :AcceptNum2, Ұ ￿￿( ERRCODE = :ErrCode, SELFEE2 = :SelFee2, Ұ ￿￿...
+--------------------------------------------------------------------------------
+
+[쿼리 #2]
+타입: UPDATE
+테이블: MASTERAUX
+필드: 
+쿼리:
+UPDATE MASTERAUX SET ACCEPT = NULL, ACCEPTNUM = NULL, Ұ ￿￿# ACCEPTNUM2 = NULL, SELFEE2 = NULL, Ұ ￿￿' REQCAREFEE2 = NULL, REMCAREFEE = NULL, Ұ ￿￿( REQPREGFEE2 := NULL, REMPREGFEE = NULL, Ұ ￿￿< PRESNUM2 := NULL, DX2 = NULL, DX2SP = NULL, REQFEE2 = NULL, Ұ ￿￿K GENFEE2 := NULL, ERRCODE = NULL WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #3]
+타입: UPDATE
+테이블: MASTERAUX
+필드: PIDNUM
+쿼리:
+UPDATE MASTERAUX SET PIDNUM = :Pidnum, Pname = :Pname, CHK = :Chk, Ұ ￿￿6 SPCODE = :Spcode, BUDAM = :Budam, CAREFEE = :CareFee, Ұ ￿￿> PREGFEE = :PregFee WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #4]
+타입: UPDATE
+테이블: MASTERAUX
+필드: 
+쿼리:
+UPDATE MASTERAUX SET CHK := :Chk, SPCODE = :Spcode, Ұ ￿￿D ACCEPT = :Accept, ACCEPTNUM = :AcceptNum, ACCEPTNUM2 = :AcceptNum2, Ұ ￿￿ SELFEE2 = :SelFee2, Ұ ￿￿6 REQCAREFEE2 = :ReqCareFee2, REMCAREFEE = :RemCareFee, Ұ ￿￿6 REQPREGFEE2 = :ReqPregFee2, REMPREGFEE = :RemPregFee, Ұ ￿￿F PRESNUM2 = :PresNum2, D...
+--------------------------------------------------------------------------------
+
+[쿼리 #5]
+타입: UPDATE
+테이블: MASTERAUX
+필드: 
+쿼리:
+UPDATE MASTERAUX SET CHK = :Chk, SPCODE = :Spcode, Ұ ￿￿> ACCEPT = :Accept, ACCEPTNUM = :AcceptNum, SELFEE2 = :SelFee2, Ұ ￿￿6 REQCAREFEE2 = :ReqCareFee2, REMCAREFEE = :RemCareFee, Ұ ￿￿6 REQPREGFEE2 = :ReqPregFee2, REMPREGFEE = :RemPregFee, Ұ ￿￿F PRESNUM2 = :PresNum2, DX2 = :Dx2, DX2SP = :Dx2Sp, REQFE...
+--------------------------------------------------------------------------------
+
+================================================================================
+UI 요소: 진단
+================================================================================
+카테고리: treatment_fields
+타입: input
+데이터베이스 필드: DX2
+데이터베이스 테이블: MASTERAUX
+
+관련 SQL 쿼리 (5개):
+--------------------------------------------------------------------------------
+
+[쿼리 #1]
+타입: UPDATE
+테이블: MASTERAUX
+필드: 
+쿼리:
+UPDATE MASTERAUX SET Ұ ￿￿ 수진자 진료확인번호 내려받기 실패... 다시 시도해주세요. Ұ ￿￿@ UPDATE MASTERAUX SET ACCEPT = :Accept, ACCEPTNUM2 = :AcceptNum2, Ұ ￿￿( ERRCODE = :ErrCode, SELFEE2 = :SelFee2, Ұ ￿￿...
+--------------------------------------------------------------------------------
+
+[쿼리 #2]
+타입: UPDATE
+테이블: MASTERAUX
+필드: 
+쿼리:
+UPDATE MASTERAUX SET ACCEPT = NULL, ACCEPTNUM = NULL, Ұ ￿￿# ACCEPTNUM2 = NULL, SELFEE2 = NULL, Ұ ￿￿' REQCAREFEE2 = NULL, REMCAREFEE = NULL, Ұ ￿￿( REQPREGFEE2 := NULL, REMPREGFEE = NULL, Ұ ￿￿< PRESNUM2 := NULL, DX2 = NULL, DX2SP = NULL, REQFEE2 = NULL, Ұ ￿￿K GENFEE2 := NULL, ERRCODE = NULL WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #3]
+타입: UPDATE
+테이블: MASTERAUX
+필드: PIDNUM
+쿼리:
+UPDATE MASTERAUX SET PIDNUM = :Pidnum, Pname = :Pname, CHK = :Chk, Ұ ￿￿6 SPCODE = :Spcode, BUDAM = :Budam, CAREFEE = :CareFee, Ұ ￿￿> PREGFEE = :PregFee WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #4]
+타입: UPDATE
+테이블: MASTERAUX
+필드: 
+쿼리:
+UPDATE MASTERAUX SET CHK := :Chk, SPCODE = :Spcode, Ұ ￿￿D ACCEPT = :Accept, ACCEPTNUM = :AcceptNum, ACCEPTNUM2 = :AcceptNum2, Ұ ￿￿ SELFEE2 = :SelFee2, Ұ ￿￿6 REQCAREFEE2 = :ReqCareFee2, REMCAREFEE = :RemCareFee, Ұ ￿￿6 REQPREGFEE2 = :ReqPregFee2, REMPREGFEE = :RemPregFee, Ұ ￿￿F PRESNUM2 = :PresNum2, D...
+--------------------------------------------------------------------------------
+
+[쿼리 #5]
+타입: UPDATE
+테이블: MASTERAUX
+필드: 
+쿼리:
+UPDATE MASTERAUX SET CHK = :Chk, SPCODE = :Spcode, Ұ ￿￿> ACCEPT = :Accept, ACCEPTNUM = :AcceptNum, SELFEE2 = :SelFee2, Ұ ￿￿6 REQCAREFEE2 = :ReqCareFee2, REMCAREFEE = :RemCareFee, Ұ ￿￿6 REQPREGFEE2 = :ReqPregFee2, REMPREGFEE = :RemPregFee, Ұ ￿￿F PRESNUM2 = :PresNum2, DX2 = :Dx2, DX2SP = :Dx2Sp, REQFE...
+--------------------------------------------------------------------------------
+
+================================================================================
+UI 요소: 진단특기
+================================================================================
+카테고리: treatment_fields
+타입: input
+데이터베이스 필드: DX2SP
+데이터베이스 테이블: MASTERAUX
+
+관련 SQL 쿼리 (5개):
+--------------------------------------------------------------------------------
+
+[쿼리 #1]
+타입: UPDATE
+테이블: MASTERAUX
+필드: 
+쿼리:
+UPDATE MASTERAUX SET Ұ ￿￿ 수진자 진료확인번호 내려받기 실패... 다시 시도해주세요. Ұ ￿￿@ UPDATE MASTERAUX SET ACCEPT = :Accept, ACCEPTNUM2 = :AcceptNum2, Ұ ￿￿( ERRCODE = :ErrCode, SELFEE2 = :SelFee2, Ұ ￿￿...
+--------------------------------------------------------------------------------
+
+[쿼리 #2]
+타입: UPDATE
+테이블: MASTERAUX
+필드: 
+쿼리:
+UPDATE MASTERAUX SET ACCEPT = NULL, ACCEPTNUM = NULL, Ұ ￿￿# ACCEPTNUM2 = NULL, SELFEE2 = NULL, Ұ ￿￿' REQCAREFEE2 = NULL, REMCAREFEE = NULL, Ұ ￿￿( REQPREGFEE2 := NULL, REMPREGFEE = NULL, Ұ ￿￿< PRESNUM2 := NULL, DX2 = NULL, DX2SP = NULL, REQFEE2 = NULL, Ұ ￿￿K GENFEE2 := NULL, ERRCODE = NULL WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #3]
+타입: UPDATE
+테이블: MASTERAUX
+필드: PIDNUM
+쿼리:
+UPDATE MASTERAUX SET PIDNUM = :Pidnum, Pname = :Pname, CHK = :Chk, Ұ ￿￿6 SPCODE = :Spcode, BUDAM = :Budam, CAREFEE = :CareFee, Ұ ￿￿> PREGFEE = :PregFee WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #4]
+타입: UPDATE
+테이블: MASTERAUX
+필드: 
+쿼리:
+UPDATE MASTERAUX SET CHK := :Chk, SPCODE = :Spcode, Ұ ￿￿D ACCEPT = :Accept, ACCEPTNUM = :AcceptNum, ACCEPTNUM2 = :AcceptNum2, Ұ ￿￿ SELFEE2 = :SelFee2, Ұ ￿￿6 REQCAREFEE2 = :ReqCareFee2, REMCAREFEE = :RemCareFee, Ұ ￿￿6 REQPREGFEE2 = :ReqPregFee2, REMPREGFEE = :RemPregFee, Ұ ￿￿F PRESNUM2 = :PresNum2, D...
+--------------------------------------------------------------------------------
+
+[쿼리 #5]
+타입: UPDATE
+테이블: MASTERAUX
+필드: 
+쿼리:
+UPDATE MASTERAUX SET CHK = :Chk, SPCODE = :Spcode, Ұ ￿￿> ACCEPT = :Accept, ACCEPTNUM = :AcceptNum, SELFEE2 = :SelFee2, Ұ ￿￿6 REQCAREFEE2 = :ReqCareFee2, REMCAREFEE = :RemCareFee, Ұ ￿￿6 REQPREGFEE2 = :ReqPregFee2, REMPREGFEE = :RemPregFee, Ұ ￿￿F PRESNUM2 = :PresNum2, DX2 = :Dx2, DX2SP = :Dx2Sp, REQFE...
+--------------------------------------------------------------------------------
+
+================================================================================
+UI 요소: 처방번호
+================================================================================
+카테고리: treatment_fields
+타입: input
+데이터베이스 필드: PRESNUM2
+데이터베이스 테이블: MASTERAUX
+
+관련 SQL 쿼리 (5개):
+--------------------------------------------------------------------------------
+
+[쿼리 #1]
+타입: UPDATE
+테이블: MASTERAUX
+필드: 
+쿼리:
+UPDATE MASTERAUX SET Ұ ￿￿ 수진자 진료확인번호 내려받기 실패... 다시 시도해주세요. Ұ ￿￿@ UPDATE MASTERAUX SET ACCEPT = :Accept, ACCEPTNUM2 = :AcceptNum2, Ұ ￿￿( ERRCODE = :ErrCode, SELFEE2 = :SelFee2, Ұ ￿￿...
+--------------------------------------------------------------------------------
+
+[쿼리 #2]
+타입: UPDATE
+테이블: MASTERAUX
+필드: 
+쿼리:
+UPDATE MASTERAUX SET ACCEPT = NULL, ACCEPTNUM = NULL, Ұ ￿￿# ACCEPTNUM2 = NULL, SELFEE2 = NULL, Ұ ￿￿' REQCAREFEE2 = NULL, REMCAREFEE = NULL, Ұ ￿￿( REQPREGFEE2 := NULL, REMPREGFEE = NULL, Ұ ￿￿< PRESNUM2 := NULL, DX2 = NULL, DX2SP = NULL, REQFEE2 = NULL, Ұ ￿￿K GENFEE2 := NULL, ERRCODE = NULL WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #3]
+타입: UPDATE
+테이블: MASTERAUX
+필드: PIDNUM
+쿼리:
+UPDATE MASTERAUX SET PIDNUM = :Pidnum, Pname = :Pname, CHK = :Chk, Ұ ￿￿6 SPCODE = :Spcode, BUDAM = :Budam, CAREFEE = :CareFee, Ұ ￿￿> PREGFEE = :PregFee WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #4]
+타입: UPDATE
+테이블: MASTERAUX
+필드: 
+쿼리:
+UPDATE MASTERAUX SET CHK := :Chk, SPCODE = :Spcode, Ұ ￿￿D ACCEPT = :Accept, ACCEPTNUM = :AcceptNum, ACCEPTNUM2 = :AcceptNum2, Ұ ￿￿ SELFEE2 = :SelFee2, Ұ ￿￿6 REQCAREFEE2 = :ReqCareFee2, REMCAREFEE = :RemCareFee, Ұ ￿￿6 REQPREGFEE2 = :ReqPregFee2, REMPREGFEE = :RemPregFee, Ұ ￿￿F PRESNUM2 = :PresNum2, D...
+--------------------------------------------------------------------------------
+
+[쿼리 #5]
+타입: UPDATE
+테이블: MASTERAUX
+필드: 
+쿼리:
+UPDATE MASTERAUX SET CHK = :Chk, SPCODE = :Spcode, Ұ ￿￿> ACCEPT = :Accept, ACCEPTNUM = :AcceptNum, SELFEE2 = :SelFee2, Ұ ￿￿6 REQCAREFEE2 = :ReqCareFee2, REMCAREFEE = :RemCareFee, Ұ ￿￿6 REQPREGFEE2 = :ReqPregFee2, REMPREGFEE = :RemPregFee, Ұ ￿￿F PRESNUM2 = :PresNum2, DX2 = :Dx2, DX2SP = :Dx2Sp, REQFE...
+--------------------------------------------------------------------------------
+
+================================================================================
+UI 요소: 요양비
+================================================================================
+카테고리: treatment_fields
+타입: input
+데이터베이스 필드: CAREFEE
+데이터베이스 테이블: MASTERAUX
+
+관련 SQL 쿼리 (5개):
+--------------------------------------------------------------------------------
+
+[쿼리 #1]
+타입: UPDATE
+테이블: MASTERAUX
+필드: 
+쿼리:
+UPDATE MASTERAUX SET Ұ ￿￿ 수진자 진료확인번호 내려받기 실패... 다시 시도해주세요. Ұ ￿￿@ UPDATE MASTERAUX SET ACCEPT = :Accept, ACCEPTNUM2 = :AcceptNum2, Ұ ￿￿( ERRCODE = :ErrCode, SELFEE2 = :SelFee2, Ұ ￿￿...
+--------------------------------------------------------------------------------
+
+[쿼리 #2]
+타입: UPDATE
+테이블: MASTERAUX
+필드: 
+쿼리:
+UPDATE MASTERAUX SET ACCEPT = NULL, ACCEPTNUM = NULL, Ұ ￿￿# ACCEPTNUM2 = NULL, SELFEE2 = NULL, Ұ ￿￿' REQCAREFEE2 = NULL, REMCAREFEE = NULL, Ұ ￿￿( REQPREGFEE2 := NULL, REMPREGFEE = NULL, Ұ ￿￿< PRESNUM2 := NULL, DX2 = NULL, DX2SP = NULL, REQFEE2 = NULL, Ұ ￿￿K GENFEE2 := NULL, ERRCODE = NULL WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #3]
+타입: UPDATE
+테이블: MASTERAUX
+필드: PIDNUM
+쿼리:
+UPDATE MASTERAUX SET PIDNUM = :Pidnum, Pname = :Pname, CHK = :Chk, Ұ ￿￿6 SPCODE = :Spcode, BUDAM = :Budam, CAREFEE = :CareFee, Ұ ￿￿> PREGFEE = :PregFee WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #4]
+타입: UPDATE
+테이블: MASTERAUX
+필드: 
+쿼리:
+UPDATE MASTERAUX SET CHK := :Chk, SPCODE = :Spcode, Ұ ￿￿D ACCEPT = :Accept, ACCEPTNUM = :AcceptNum, ACCEPTNUM2 = :AcceptNum2, Ұ ￿￿ SELFEE2 = :SelFee2, Ұ ￿￿6 REQCAREFEE2 = :ReqCareFee2, REMCAREFEE = :RemCareFee, Ұ ￿￿6 REQPREGFEE2 = :ReqPregFee2, REMPREGFEE = :RemPregFee, Ұ ￿￿F PRESNUM2 = :PresNum2, D...
+--------------------------------------------------------------------------------
+
+[쿼리 #5]
+타입: UPDATE
+테이블: MASTERAUX
+필드: 
+쿼리:
+UPDATE MASTERAUX SET CHK = :Chk, SPCODE = :Spcode, Ұ ￿￿> ACCEPT = :Accept, ACCEPTNUM = :AcceptNum, SELFEE2 = :SelFee2, Ұ ￿￿6 REQCAREFEE2 = :ReqCareFee2, REMCAREFEE = :RemCareFee, Ұ ￿￿6 REQPREGFEE2 = :ReqPregFee2, REMPREGFEE = :RemPregFee, Ұ ￿￿F PRESNUM2 = :PresNum2, DX2 = :Dx2, DX2SP = :Dx2Sp, REQFE...
+--------------------------------------------------------------------------------
+
+================================================================================
+UI 요소: 예약수수료
+================================================================================
+카테고리: treatment_fields
+타입: input
+데이터베이스 필드: PREGFEE
+데이터베이스 테이블: MASTERAUX
+
+관련 SQL 쿼리 (5개):
+--------------------------------------------------------------------------------
+
+[쿼리 #1]
+타입: UPDATE
+테이블: MASTERAUX
+필드: 
+쿼리:
+UPDATE MASTERAUX SET Ұ ￿￿ 수진자 진료확인번호 내려받기 실패... 다시 시도해주세요. Ұ ￿￿@ UPDATE MASTERAUX SET ACCEPT = :Accept, ACCEPTNUM2 = :AcceptNum2, Ұ ￿￿( ERRCODE = :ErrCode, SELFEE2 = :SelFee2, Ұ ￿￿...
+--------------------------------------------------------------------------------
+
+[쿼리 #2]
+타입: UPDATE
+테이블: MASTERAUX
+필드: 
+쿼리:
+UPDATE MASTERAUX SET ACCEPT = NULL, ACCEPTNUM = NULL, Ұ ￿￿# ACCEPTNUM2 = NULL, SELFEE2 = NULL, Ұ ￿￿' REQCAREFEE2 = NULL, REMCAREFEE = NULL, Ұ ￿￿( REQPREGFEE2 := NULL, REMPREGFEE = NULL, Ұ ￿￿< PRESNUM2 := NULL, DX2 = NULL, DX2SP = NULL, REQFEE2 = NULL, Ұ ￿￿K GENFEE2 := NULL, ERRCODE = NULL WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #3]
+타입: UPDATE
+테이블: MASTERAUX
+필드: PIDNUM
+쿼리:
+UPDATE MASTERAUX SET PIDNUM = :Pidnum, Pname = :Pname, CHK = :Chk, Ұ ￿￿6 SPCODE = :Spcode, BUDAM = :Budam, CAREFEE = :CareFee, Ұ ￿￿> PREGFEE = :PregFee WHERE...
+--------------------------------------------------------------------------------
+
+[쿼리 #4]
+타입: UPDATE
+테이블: MASTERAUX
+필드: 
+쿼리:
+UPDATE MASTERAUX SET CHK := :Chk, SPCODE = :Spcode, Ұ ￿￿D ACCEPT = :Accept, ACCEPTNUM = :AcceptNum, ACCEPTNUM2 = :AcceptNum2, Ұ ￿￿ SELFEE2 = :SelFee2, Ұ ￿￿6 REQCAREFEE2 = :ReqCareFee2, REMCAREFEE = :RemCareFee, Ұ ￿￿6 REQPREGFEE2 = :ReqPregFee2, REMPREGFEE = :RemPregFee, Ұ ￿￿F PRESNUM2 = :PresNum2, D...
+--------------------------------------------------------------------------------
+
+[쿼리 #5]
+타입: UPDATE
+테이블: MASTERAUX
+필드: 
+쿼리:
+UPDATE MASTERAUX SET CHK = :Chk, SPCODE = :Spcode, Ұ ￿￿> ACCEPT = :Accept, ACCEPTNUM = :AcceptNum, SELFEE2 = :SelFee2, Ұ ￿￿6 REQCAREFEE2 = :ReqCareFee2, REMCAREFEE = :RemCareFee, Ұ ￿￿6 REQPREGFEE2 = :ReqPregFee2, REMPREGFEE = :RemPregFee, Ұ ￿￿F PRESNUM2 = :PresNum2, DX2 = :Dx2, DX2SP = :Dx2Sp, REQFE...
+--------------------------------------------------------------------------------
