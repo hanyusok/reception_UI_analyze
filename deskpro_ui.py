@@ -9,17 +9,41 @@ from PyQt6.QtWidgets import (
 )
 from PyQt6.QtCore import Qt, QDate
 
+try:
+    import fdb
+    HAS_FDB = True
+except ImportError:
+    HAS_FDB = False
+
 class DatabaseManager:
-    def __init__(self, db_path="deskpro.db"):
+    def __init__(self, db_path="/mnt/c/Users/DELL/Documents/db/MTSDB.FDB"):
         self.db_path = db_path
+        self.is_firebird = db_path.upper().endswith(".FDB")
+        if not HAS_FDB and self.is_firebird:
+            print("Warning: fdb library not found. Please install with 'pip install fdb'")
         self.init_db()
 
     def get_connection(self):
-        conn = sqlite3.connect(self.db_path)
-        conn.row_factory = sqlite3.Row
-        return conn
+        if self.is_firebird:
+            if not HAS_FDB:
+                raise ImportError("fdb library is required for .FDB files. Run 'pip install fdb --break-system-packages'")
+            # Firebird 연결 (기본 계정: SYSDBA / masterkey)
+            return fdb.connect(
+                database=self.db_path,
+                user='SYSDBA',
+                password='masterkey',
+                charset='UTF8'
+            )
+        else:
+            conn = sqlite3.connect(self.db_path)
+            conn.row_factory = sqlite3.Row
+            return conn
 
     def init_db(self):
+        # Firebird의 경우 이미 존재하는 DB를 사용하므로 초기화 생략 가능
+        if self.is_firebird:
+            return
+            
         conn = self.get_connection()
         cursor = conn.cursor()
         
@@ -80,7 +104,14 @@ class DatabaseManager:
         cursor = conn.cursor()
         query = "SELECT * FROM PERSON WHERE PNAME LIKE ?"
         cursor.execute(query, (f"%{keyword}%",))
-        results = [dict(row) for row in cursor.fetchall()]
+        
+        # 필드명을 항상 대문자로 변환하여 일관성 유지
+        if self.is_firebird:
+            columns = [desc[0].upper() for desc in cursor.description]
+            results = [dict(zip(columns, row)) for row in cursor.fetchall()]
+        else:
+            results = [{k.upper(): v for k, v in dict(row).items()} for row in cursor.fetchall()]
+            
         conn.close()
         return results
 
@@ -88,21 +119,26 @@ class DatabaseManager:
         conn = self.get_connection()
         cursor = conn.cursor()
         
+        # Firebird와 SQLite 호환성을 위해 파라미터 스타일 조정
+        if self.is_firebird:
+            param_char = "?"
+        else:
+            param_char = "?" # SQLite도 ? 지원
+
         if 'PCODE' in data and data['PCODE']:
             # 수정 (UPDATE)
-            query = '''
-                UPDATE PERSON SET 
-                PNAME = :PNAME, PBIRTH = :PBIRTH, PIDNUM = :PIDNUM, 
-                SEX = :SEX, RELATION = :RELATION, AGREE = :AGREE 
-                WHERE PCODE = :PCODE
-            '''
-            cursor.execute(query, data)
+            fields = ['PNAME', 'PBIRTH', 'PIDNUM', 'SEX', 'RELATION', 'AGREE']
+            set_clause = ", ".join([f"{f} = ?" for f in fields])
+            query = f"UPDATE PERSON SET {set_clause} WHERE PCODE = ?"
+            params = [data[f] for f in fields] + [data['PCODE']]
+            cursor.execute(query, params)
         else:
             # 신규 (INSERT)
             fields = ['PNAME', 'PBIRTH', 'PIDNUM', 'SEX', 'RELATION', 'AGREE']
-            placeholders = [f":{f}" for f in fields]
-            query = f"INSERT INTO PERSON ({', '.join(fields)}) VALUES ({', '.join(placeholders)})"
-            cursor.execute(query, data)
+            placeholders = ", ".join(["?" for _ in fields])
+            query = f"INSERT INTO PERSON ({', '.join(fields)}) VALUES ({placeholders})"
+            params = [data[f] for f in fields]
+            cursor.execute(query, params)
             
         conn.commit()
         conn.close()

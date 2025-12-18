@@ -44,16 +44,31 @@ function formatDate(dateValue: any): string {
       if (dateValue.toISOString) {
         return format(new Date(dateValue.toISOString()), 'yyyy-MM-dd')
       }
+      // Firebird/Interbase 등에서 흔히 사용하는 year, month, day 구조 확인
+      if (dateValue.year !== undefined && dateValue.month !== undefined && dateValue.day !== undefined) {
+        const year = dateValue.year
+        const month = String(dateValue.month).padStart(2, '0')
+        const day = String(dateValue.day).padStart(2, '0')
+        return `${year}-${month}-${day}`
+      }
       // 다른 속성들 확인
       if (dateValue.value || dateValue.date) {
         return formatDate(dateValue.value || dateValue.date)
       }
+      // 만약 객체가 JSON 문자열화 가능하다면 시도 (단, [object Object] 방지)
+      try {
+        const jsonStr = JSON.stringify(dateValue)
+        if (jsonStr !== '{}' && !jsonStr.includes('[object')) {
+          return jsonStr
+        }
+      } catch (e) {}
     }
     
-    return String(dateValue)
+    const strValue = String(dateValue)
+    return strValue === '[object Object]' ? '날짜 형식 오류' : strValue
   } catch (error) {
     console.warn('Date formatting error:', error, dateValue)
-    return String(dateValue)
+    return '날짜 오류'
   }
 }
 
