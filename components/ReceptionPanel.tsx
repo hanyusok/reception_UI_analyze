@@ -203,13 +203,13 @@ export default function ReceptionPanel() {
                             </div>
                           )}
                           {displayPidnum && (
-                            <div className="flex items-center">
+                            <div className="flex items-center hidden">
                               <span className="text-gray-500 w-20">주민번호:</span>
                               <span className="font-mono text-xs">{displayPidnum}</span>
                             </div>
                           )}
                           {patient.PCODE && (
-                            <div className="flex items-center">
+                            <div className="flex items-center hidden">
                               <span className="text-gray-500 w-20">코드:</span>
                               <span className="font-medium text-primary-600">{patient.PCODE}</span>
                             </div>
